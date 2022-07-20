@@ -1,0 +1,44 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    color: $text-color;
+    font-family: 'Zona Pro', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    @media(min-width: $fhd) {
+        font-size: 18px;
+        line-height: 1.55555;
+    }
+}
+
+a {
+    color: $text-color;
+    transition: color 0.3s;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: $link-hover-color;
+    }
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: 'Zona Pro', Arial, sans-serif;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    &:not(:last-child) {
+        margin-bottom: 28px;
+    }
+}

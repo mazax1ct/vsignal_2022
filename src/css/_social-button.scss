@@ -1,0 +1,22 @@
+.social-button {
+    align-items: center;
+    border-radius: 12px;
+    background-color: $text-color;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    transition: background-color 0.3s;
+    width: 40px;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: #728CCF;
+    }
+
+    svg {
+        fill: #fff;
+        height: 24px;
+        width: 24px;
+    }
+}

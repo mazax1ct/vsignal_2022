@@ -1,0 +1,35 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background-color: $bg-light-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    &.overflow {
+        overflow: hidden;
+    }
+}
+
+.content {
+    flex: 1 0 auto;
+    padding-top: 65px;
+    @media(min-width: $sm) {
+        padding-top: 100px;
+    }
+}
+
+.footer {
+    flex-shrink: 0;
+}
