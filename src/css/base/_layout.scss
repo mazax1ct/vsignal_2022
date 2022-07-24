@@ -28,6 +28,9 @@ body {
     @media(min-width: $sm) {
         padding-top: 100px;
     }
+    @media(min-width: $fhd) {
+        padding-top: 5.7vw;
+    }
 }
 
 .footer {

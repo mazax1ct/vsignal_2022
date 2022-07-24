@@ -1,0 +1,134 @@
+.b-1 {
+    background-color: $bg-color;
+    padding: clamp(40px, 8.5vw, 64px) clamp(12px, 4vw, 64px);
+    text-align: center;
+    @media(min-width: $hd) {
+        padding-left: 4.2vw;
+        padding-right: 4.2vw;
+        text-align: left;
+    }
+    @media(min-width: $fhd) {
+        padding: 3vw 4.2vw;
+    }
+
+    &__top {
+        margin-bottom: clamp(40px, 8.5vw, 120px);
+        @media(min-width: $hd) {
+            align-items: start;
+            display: grid;
+            grid-template-columns: calc(44% - clamp(40px, 3.5vw, 88px)) calc(56% + clamp(40px, 3.5vw, 88px));
+            justify-items: start;
+            margin-bottom: 6vw;
+        }
+    }
+
+    &__title {
+        font-size: clamp(40px, 8.5vw, 64px);
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        line-height: 1.2;
+
+        &:not(:last-child) {
+            margin-bottom: 0.25em;
+        }
+
+        b {
+            font-weight: 900;
+        }
+        @media(min-width: $hd) {
+            font-size: 5vw;
+            grid-column: 1;
+            grid-row-start: 1;
+            margin-top: 0.5em;
+        }
+    }
+
+    &__text {
+        font-size: clamp(18px, 4vw, 24px);
+        font-weight: 300;
+
+        &:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+        @media(min-width: $hd) {
+            font-size: 1.75vw;
+            grid-column: 1;
+            grid-row-start: 2;
+        }
+    }
+
+    &__media {
+        &:not(:last-child) {
+            margin-bottom: clamp(40px, 7vw, 48px);
+            @media(min-width: $hd) {
+                margin-bottom: 0;
+            }
+        }
+        @media(min-width: $hd) {
+            grid-column: 2;
+            grid-row: span 4;
+            padding-left: clamp(40px, 3.5vw, 88px);
+            width: 100%;
+        }
+
+        .video {
+            max-width: 624px;
+            margin-left: auto;
+            margin-right: auto;
+            @media(min-width: $hd) {
+                max-width: initial;
+            }
+        }
+
+        .video__video {
+            @media(min-width: $sm) {
+                border-radius: 32px;
+            }
+            @media(min-width: $fhd) {
+                border-radius: 1.67vw;
+            }
+        }
+
+        .video__play {
+            @media(min-width: $hd) {
+                width: 8vw;
+                height: 8vw;
+            }
+
+            svg {
+                @media(min-width: $hd) {
+                    width: 2.5vw;
+                    height: 2.5vw;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__player {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+            @media(min-width: $sm) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+
+        .social-button {
+            &:not(:last-child) {
+                margin-right: 18px;
+            }
+        }
+    }
+}

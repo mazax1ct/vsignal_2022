@@ -1,0 +1,8 @@
+.player {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    @media(min-width: $fhd) {
+        width: 304px;
+    }
+}

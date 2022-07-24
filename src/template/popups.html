@@ -1,7 +1,39 @@
 <div id="feedbackPopup" class="popup">
     <p class="popup__title">Заполните форму<br> обратной связи</p>
     <p class="popup__text">И мы свяжемся с вами!</p>
-    <form class="popup__form" action="">
-
+    <form class="popup__form form" action="">
+        <div class="form__row">
+            <div class="form__cell">
+                <label class="input-label">
+                    <input class="input" type="text" value="" placeholder="Ваше имя*">
+                </label>
+            </div>
+            <div class="form__cell">
+                <label class="input-label">
+                    <input class="js-email-mask input" type="text" value="" placeholder="Ваш email*">
+                </label>
+            </div>
+        </div>
+        <div class="form__row">
+            <div class="form__cell">
+                <label class="input-label">
+                    <input class="js-phone-mask input" type="text" value="" placeholder="Ваш телефон">
+                </label>
+            </div>
+            <div class="form__cell">
+                <label class="input-label">
+                    <textarea class="textarea" placeholder="Ваш вопрос"></textarea>
+                </label>
+            </div>
+        </div>
+        <div class="form__button-block">
+            <button class="button button--type_4" type="submit">
+                Отправить
+                <svg class="arrow-right" aria-hidden="true">
+                    <use xlink:href="#arrow_right"></use>
+                </svg>
+            </button>
+            <p class="form__note">Отправляя заявку, вы даете согласие на обработку своих персональных данных и соглашаетесь с политикой конфиденциальности</p>
+        </div>
     </form>
 </div>

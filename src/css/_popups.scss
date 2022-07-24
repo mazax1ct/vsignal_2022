@@ -2,4 +2,92 @@
     background-color: $bg-color;
     border-radius: 12px;
     display: none;
+    width: 100%;
+
+    &.fancybox-content {
+        max-width: 1132px;
+        padding: 60px 20px 20px;
+        @media(min-width: $sm) {
+            padding-bottom: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media(min-width: $hd) {
+            padding: 80px 56px;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.16666;
+        margin-bottom: 24px;
+        text-align: center;
+        @media(min-width: $sm) {
+            font-size: 36px;
+        }
+        @media(min-width: $hd) {
+            font-size: 48px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__form {
+        border-radius: 12px;
+        background-color: $bg-light-color;
+        padding: 40px 20px;
+        @media(min-width: $sm) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media(min-width: $hd) {
+            padding-left: 56px;
+            padding-right: 56px;
+        }
+    }
+}
+
+.fancybox-slide--html {
+    .popup {
+        .fancybox-close-small {
+            align-items: center;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            height: 56px;
+            opacity: 1;
+            padding: 0;
+            right: 6px;
+            top: 6px;
+            transition: background-color 0.3s;
+            width: 56px;
+            @media(min-width: $sm) {
+                right: 10px;
+                top: 10px;
+            }
+
+            &:active,
+            &:focus,
+            &:hover {
+                background-color: $bg-heavy-color;
+            }
+
+            svg {
+                fill: $text-color;
+                height: 26px;
+                width: 26px;
+            }
+        }
+    }
 }

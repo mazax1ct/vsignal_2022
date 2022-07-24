@@ -1,0 +1,43 @@
+.video {
+    position: relative;
+
+    &__video {
+        border-radius: 12px;
+        display: block;
+        filter: drop-shadow(0 0 12px rgba(#000, 0.15));
+        width: 100%;
+    }
+
+    &__play {
+        align-items: center;
+        border: none;
+        background-color: rgba($bg-light-color, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        backdrop-filter: blur(20px);
+        filter: drop-shadow(0 3px 3px rgba(#000, 0.15));
+        display: flex;
+        height: clamp(56px, 12.5vw, 96px);
+        justify-content: center;
+        left: 50%;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 0.3s;
+        width: clamp(56px, 12.5vw, 96px);
+        z-index: 1;
+
+        svg {
+            fill: #F8F8F8;
+            height: clamp(24px, 4vw, 36px);
+            margin-left: 2px;
+            width: clamp(24px, 4vw, 36px);
+        }
+
+        &:focus,
+        &:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+    }
+}

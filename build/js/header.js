@@ -1,5 +1,16 @@
+//вычисляем ширину скроллбара
+function scrollBarWidth() {
+  var scrollBarWidth = window.innerWidth-$(document).width();
+
+  if(scrollBarWidth > 0) {
+    $('body').addClass('compensate-for-scrollbar');
+    $('head').append('<style id="menu-open" type="text/css">.compensate-for-scrollbar{padding-right:'+scrollBarWidth+"px;}</style>")
+  }
+}
+
 $(document).on('click', '.js-menu-toggler', function () {
   if(!$(this).hasClass('is-active')) {
+    scrollBarWidth();
     $(this).addClass("is-active");
     $(this).attr('title', 'Закрыть меню');
     $('body').addClass('overflow');
@@ -16,6 +27,10 @@ $(document).on('click', '.js-menu-toggler', function () {
     $('.main-menu').removeClass("is-active");
     setTimeout(function() {
       $('.main-menu').fadeOut();
+      setTimeout(function() {
+        $('#menu-open').remove();
+        $('body').removeClass('compensate-for-scrollbar');
+      },100);
     },300);
   }
   return false;

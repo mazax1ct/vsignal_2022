@@ -22,8 +22,11 @@
             padding-right: 40px;
         }
         @media(min-width: $hd) {
-            padding-left: 80px;
-            padding-right: 80px;
+            padding-left: 4.2vw;
+            padding-right: 4.2vw;
+        }
+        @media(min-width: $fhd) {
+            min-height: 5.7vw;
         }
     }
 
@@ -33,9 +36,13 @@
         @media(min-width: $sm) {
             width: 121px;
         }
+        @media(min-width: $fhd) {
+            width: 6.3021vw;
+        }
 
         img {
             display: block;
+            width: 100%;
         }
     }
 
@@ -60,7 +67,7 @@
         }
         @media(min-width: $sm) {
             height: 88px;
-            margin-right: -28px;
+            margin-right: -26px;
             width: 88px;
         }
 

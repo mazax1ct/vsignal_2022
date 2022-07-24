@@ -1,0 +1,48 @@
+.form {
+    &__row {
+        @media(min-width: $sm) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+
+    &__cell {
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            max-width: 454px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 50%;
+        }
+    }
+
+    .textarea {
+        height: 56px;
+    }
+
+    &__button-block {
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+        }
+
+        .button {
+            min-width: 228px;
+        }
+    }
+
+    &__note {
+        font-size: 14px;
+        margin-top: 28px;
+        @media(min-width: $sm) {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+        @media(min-width: $hd) {
+            font-size: 16px;
+        }
+    }
+}
