@@ -15,9 +15,8 @@
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     vertical-align: top;
     @media(min-width: $fhd) {
-        /*font-size: 18px;
-        min-height: 56px;
-        padding: 15px 26px;*/
+        border-radius: 0.105vw;
+        border-width: 0.105vw;
         font-size: 0.9375vw;
         min-height: 2vw;
         padding: 0.8vw 1.5vw;
@@ -206,7 +205,7 @@
         margin-left: 14px;
         transition: stroke 0.3s;
         width: 31px;
-        @media(min-width: $hd) {
+        @media(min-width: $fhd) {
             width: 1.615vw;
             min-width: 1.615vw;
             height: 0.469vw;

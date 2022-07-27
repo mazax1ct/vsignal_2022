@@ -6,6 +6,9 @@
         display: block;
         filter: drop-shadow(0 0 12px rgba(#000, 0.15));
         width: 100%;
+        @media(min-width: $hd) {
+            filter: drop-shadow(0 0 0.625vw rgba(#000, 0.15));
+        }
     }
 
     &__play {
@@ -27,12 +30,18 @@
         transition: transform 0.3s;
         width: clamp(56px, 12.5vw, 96px);
         z-index: 1;
+        @media(min-width: $hd) {
+            filter: drop-shadow(0 0.157vw 0.157vw rgba(#000, 0.15));
+        }
 
         svg {
             fill: #F8F8F8;
             height: clamp(24px, 4vw, 36px);
             margin-left: 2px;
             width: clamp(24px, 4vw, 36px);
+            @media(min-width: $hd) {
+                margin-left: 0.105vw;
+            }
         }
 
         &:focus,

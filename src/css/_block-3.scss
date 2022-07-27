@@ -1,0 +1,73 @@
+.b-3 {
+    padding-top: clamp(32px, 8.5vw, 40px);
+    @media(min-width: $sm) {
+        padding-top: clamp(40px, 6vw, 72px);
+    }
+    @media(min-width: $fhd) {
+        padding-top: 3.75vw;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: clamp(40px, 8.5vw, 64px);
+        @media(min-width: $sm) {
+            margin-bottom: clamp(40px, 6vw, 72px);
+        }
+    }
+
+    &.dark-bg {
+        background-color: $bg-color;
+        padding-bottom: clamp(40px, 8.5vw, 56px);
+        @media(min-width: $sm) {
+            padding-bottom: clamp(40px, 6vw, 72px);
+        }
+        @media(min-width: $fhd) {
+            padding-bottom: 3.75vw;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text-block {
+        padding-left: clamp(20px, 4vw, 80px);
+        padding-right: clamp(20px, 4vw, 80px);
+        text-align: center;
+        @media(min-width: $hd) {
+            padding-left: clamp(80px, 11vw, 220px);
+            padding-right: clamp(80px, 11vw, 220px);
+            text-align: left;
+        }
+        @media(min-width: $fhd) {
+            padding-left: 11.5vw;
+            padding-right: 11.5vw;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: clamp(24px, 4vw, 40px);
+            @media(min-width: $fhd) {
+                margin-bottom: 3vw;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.25;
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            font-size: clamp(32px, 2.6vw, 48px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 2.5vw;
+        }
+    }
+
+    &__text {
+        max-width: 680px;
+        @media(min-width: $hd) {
+            max-width: 49%;
+        }
+    }
+}

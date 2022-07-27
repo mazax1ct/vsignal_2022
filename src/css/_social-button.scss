@@ -7,6 +7,11 @@
     justify-content: center;
     transition: background-color 0.3s;
     width: 40px;
+    @media(min-width: $fhd) {
+        border-radius: 0.625vw;
+        height: 2.084vw;
+        width: 2.084vw;
+    }
 
     &:active,
     &:focus,
@@ -18,5 +23,9 @@
         fill: #fff;
         height: 24px;
         width: 24px;
+        @media(min-width: $fhd) {
+            height: 1.25vw;
+            width: 1.25vw;
+        }
     }
 }

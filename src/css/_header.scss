@@ -6,6 +6,9 @@
     right: 0;
     top: 0;
     z-index: 10;
+    @media(min-width: $fhd) {
+        box-shadow: 0 0.2091vw 0.2091vw 0 rgba(#000, 0.15);
+    }
 
     &__inner {
         align-items: center;
@@ -22,11 +25,13 @@
             padding-right: 40px;
         }
         @media(min-width: $hd) {
-            padding-left: 4.2vw;
-            padding-right: 4.2vw;
+            padding-left: 80px;
+            padding-right: 80px;
         }
         @media(min-width: $fhd) {
             min-height: 5.7vw;
+            padding-left: 4.2vw;
+            padding-right: 4.2vw;
         }
     }
 
@@ -70,6 +75,11 @@
             margin-right: -26px;
             width: 88px;
         }
+        @media(min-width: $fhd) {
+            height: 4.584vw;
+            margin-right: -1.355vw;
+            width: 4.584vw;
+        }
 
         span {
             background-color: $text-color;
@@ -78,15 +88,25 @@
             position: relative;
             transition: all 0.3s;
             width: 36px;
+            @media(min-width: $fhd) {
+                height: 0.157vw;
+                width: 1.875vw;
+            }
 
             &::before {
                 bottom: 12px;
                 transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+                @media(min-width: $fhd) {
+                    bottom: 0.471vw;
+                }
             }
 
             &::after {
                 top: 12px;
                 transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+                @media(min-width: $fhd) {
+                    top: 0.471vw;
+                }
             }
 
             &::after,
@@ -98,6 +118,9 @@
                 position: absolute;
                 background-color: $text-color;
                 width: 100%;
+                @media(min-width: $fhd) {
+                    height: 0.157vw;
+                }
             }
         }
 
@@ -135,7 +158,6 @@
     z-index: 10;
     @media(min-width: $sm) {
         padding-top: 100px;
-        //padding-bottom: 80px;
     }
 
     &.is-active {
@@ -205,6 +227,9 @@
             display: flex;
             justify-content: center;
         }
+        @media(min-width: $fhd) {
+            font-size: 0.834vw;
+        }
 
         button {
             background-color: transparent;
@@ -219,6 +244,9 @@
             transition: color 0.3s;
             @media(min-width: $sm) {
                 margin-bottom: 0;
+            }
+            @media(min-width: $fhd) {
+                font-size: 0.834vw;
             }
 
             &:active,
@@ -236,6 +264,10 @@
             @media(min-width: $hd) {
                 margin-left: 70px;
                 margin-right: 70px;
+            }
+            @media(min-width: $fhd) {
+                margin-left: 3.646vw;
+                margin-right: 3.646vw;
             }
 
             &:first-child {

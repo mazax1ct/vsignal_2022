@@ -3,6 +3,11 @@
     vertical-align: top;
     width: 260px;
     @media(min-width: $fhd) {
-        width: 304px;
+        width: 15.834vw;
+    }
+
+    img {
+        display: block;
+        width: 100%;
     }
 }

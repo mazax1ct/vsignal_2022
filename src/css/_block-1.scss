@@ -3,8 +3,8 @@
     padding: clamp(40px, 8.5vw, 64px) clamp(12px, 4vw, 64px);
     text-align: center;
     @media(min-width: $hd) {
-        padding-left: 4.2vw;
-        padding-right: 4.2vw;
+        padding-left: 80px;
+        padding-right: 80px;
         text-align: left;
     }
     @media(min-width: $fhd) {
@@ -39,6 +39,7 @@
             font-size: 5vw;
             grid-column: 1;
             grid-row-start: 1;
+            letter-spacing: 0.006vw;
             margin-top: 0.5em;
         }
     }
@@ -84,8 +85,8 @@
             @media(min-width: $sm) {
                 border-radius: 32px;
             }
-            @media(min-width: $fhd) {
-                border-radius: 1.67vw;
+            @media(min-width: $hd) {
+                border-radius: 1.667vw;
             }
         }
 
@@ -128,6 +129,9 @@
         .social-button {
             &:not(:last-child) {
                 margin-right: 18px;
+                @media(min-width: $hd) {
+                    margin-right: 0.938vw;
+                }
             }
         }
     }

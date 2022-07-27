@@ -9,7 +9,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     @media(min-width: $fhd) {
-        font-size: 18px;
+        font-size: 0.938vw;
         line-height: 1.55555;
     }
 }
@@ -41,5 +41,8 @@ img {
 p {
     &:not(:last-child) {
         margin-bottom: 28px;
+        @media(min-width: $fhd) {
+            margin-bottom: 1.459vw;
+        }
     }
 }

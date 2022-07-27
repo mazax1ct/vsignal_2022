@@ -1,9 +1,8 @@
 .footer {
-    padding: 48px 20px;
+    padding: 32px 20px;
     position: relative;
     z-index: 0;
     @media(min-width: $sm) {
-        padding-top: 32px;
         padding-left: 48px;
         padding-right: 48px;
     }
@@ -11,11 +10,18 @@
         padding-left: 180px;
         padding-right: 180px;
     }
+    @media(min-width: $fhd) {
+        padding-top: 1.667vw;
+        padding-bottom: 2.5vw;
+    }
 
     &__inner {
         margin-left: auto;
         margin-right: auto;
         max-width: 912px;
+        @media(min-width: $fhd) {
+            max-width: 47.5vw;
+        }
     }
 
     &__top {
@@ -26,6 +32,9 @@
         }
         @media(min-width: $hd) {
             margin-bottom: 32px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 1.667vw;
         }
 
         .footer__title {
@@ -42,6 +51,10 @@
         font-weight: 700;
         line-height: 1.77777;
         margin-bottom: 20px;
+        @media(min-width: $fhd) {
+            font-size: 0.938vw;
+            margin-bottom: 20px;
+        }
     }
 
     &__socials {
@@ -55,6 +68,10 @@
             top: auto;
             z-index: 1;
         }
+        @media(min-width: $fhd) {
+            bottom: 2.709vw;
+            left: 1.667vw;
+        }
 
         .social-button {
             &:not(:last-child) {
@@ -62,6 +79,10 @@
                 @media(min-width: $hd) {
                     margin-right: 0;
                     margin-bottom: 18px;
+                }
+                @media(min-width: $fhd) {
+                    margin-right: 0;
+                    margin-bottom: 0.938vw;
                 }
             }
         }
@@ -78,12 +99,18 @@
             line-height: 1.5;
             text-align: left;
         }
+        @media(min-width: $fhd) {
+            font-size: 3.334vw;
+        }
 
         a {
             display: inline-block;
             text-decoration-thickness: 2px;
             text-underline-offset: 0.2em;
             vertical-align: top;
+            @media(min-width: $fhd) {
+                text-decoration-thickness: 0.105vw;
+            }
         }
     }
 
@@ -96,11 +123,16 @@
         text-align: center;
         @media(min-width: $sm) {
             display: grid;
+            font-size: 18px;
             grid-template-columns: max-content max-content max-content;
             grid-column-gap: 88px;
-            font-size: 18px;
             line-height: 1.22222;
             text-align: left;
+        }
+        @media(min-width: $fhd) {
+            font-size: 0.938vw;
+            grid-column-gap: 4.584vw;
+            margin-bottom: 2.084vw;
         }
 
         p {
@@ -108,6 +140,9 @@
                 margin-bottom: 24px;
                 @media(min-width: $sm) {
                     margin-bottom: 22px;
+                }
+                @media(min-width: $fhd) {
+                    margin-bottom: 1.146vw;
                 }
             }
         }
