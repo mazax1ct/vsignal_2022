@@ -1,0 +1,93 @@
+.person-card {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(#000, 0.25);
+    max-width: 320px;
+    padding: 20px 20px 30px;
+    text-align: center;
+    width: 100%;
+    @media(min-width: $sm) {
+        max-width: 340px;
+    }
+    @media(min-width: $hd) {
+        max-width: 380px;
+        padding: 24px 24px 32px;
+    }
+    @media(min-width: $fhd) {
+        border-radius: 0.625vw;
+        box-shadow: 0 0.209vw 0.209vw rgba(#000, 0.25);
+        max-width: 24.48vw;
+        padding: 1.25vw 1.25vw 1.667vw;
+    }
+
+    &.dark-bg {
+        background-color: $bg-color;
+    }
+
+    img {
+        border-radius: 8px;
+        display: block;
+        margin-bottom: 16px;
+        width: 100%;
+        @media(min-width: $hd) {
+            margin-bottom: 20px;
+        }
+        @media(min-width: $fhd) {
+            border-radius: 0.625vw;
+            margin-bottom: 1.25vw;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.4;
+        @media(min-width: $sm) {
+            font-size: 24px;
+        }
+        @media(min-width: $hd) {
+            font-size: 26px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 1.667vw;
+            line-height: 1.25;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+            @media(min-width: $hd) {
+                margin-bottom: 16px;
+            }
+            @media(min-width: $fhd) {
+                margin-bottom: 1.042vw;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        padding-top: 12px;
+        position: relative;
+        z-index: 0;
+        @media(min-width: $hd) {
+            font-size: 20px;
+            padding-top: 16px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 1.25vw;
+            line-height: 1.33333;
+            padding-top: 0.834vw;
+        }
+
+        &::before {
+            border-top: 1px solid $text-color;
+            content: '';
+            left: 50%;
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%);
+            width: 78%;
+            z-index: 0;
+        }
+    }
+}

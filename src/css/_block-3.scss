@@ -6,14 +6,12 @@
     @media(min-width: $fhd) {
         padding-top: 3.75vw;
     }
-
-    &:not(:last-child) {
+    /*&:not(:last-child) {
         margin-bottom: clamp(40px, 8.5vw, 64px);
         @media(min-width: $sm) {
             margin-bottom: clamp(40px, 6vw, 72px);
         }
-    }
-
+    }*/
     &.dark-bg {
         background-color: $bg-color;
         padding-bottom: clamp(40px, 8.5vw, 56px);

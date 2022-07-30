@@ -1,0 +1,103 @@
+.service-card {
+    border-radius: 24px;
+    border: 2px solid $link-hover-color;
+    background-color: $bg-light-color;
+    color: $link-hover-color;
+    display: flex;
+    flex-direction: column;
+    max-width: 490px;
+    padding: 24px 16px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    @media(min-width: $sm) {
+        padding: clamp(24px, 8.5vw, 32px);
+    }
+    @media(min-width: $fhd) {
+        border-width: 0.105vw;
+        border-radius: 1.25vw;
+        padding: 2.084vw 2.917vw;
+    }
+
+    &:hover {
+        background-color: $bg-heavy-color;
+        border-color: $bg-heavy-color;
+        color: $text-color;
+
+        .service-card__button {
+            border-color: $bg-heavy-color;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-bottom: 24px;
+        text-align: center;
+        @media(min-width: $hd) {
+            font-size: clamp(24px, 8.5vw, 36px);
+            margin-bottom: clamp(24px, 8.5vw, 32px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 1.875vw;
+            margin-bottom: 1.667vw;
+        }
+    }
+
+    &__price {
+        font-size: 32px;
+        line-height: 1.16666;
+        margin-top: auto;
+        text-align: center;
+        @media(min-width: $hd) {
+            font-size: clamp(32px, 8.5vw, 36px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 1.875vw;
+        }
+    }
+
+    &__button {
+        align-self: center;
+        align-items: center;
+        background-color: $bg-light-color;
+        border-color: $link-hover-color;
+        border: 2px solid;
+        border-radius: 4px;
+        color: $link-hover-color;
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 16px;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 1.22222;
+        min-height: 44px;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+        vertical-align: top;
+        @media(min-width: $fhd) {
+            border-radius: 0.105vw;
+            border-width: 0.105vw;
+            font-size: 0.9375vw;
+            min-height: 2vw;
+            padding: 0.8vw 1.5vw;
+        }
+
+        .arrow-right {
+            fill: none;
+            height: 9px;
+            min-width: 31px;
+            margin-left: 14px;
+            stroke: $link-hover-color;
+            transition: stroke 0.3s;
+            width: 31px;
+            @media(min-width: $fhd) {
+                width: 1.615vw;
+                min-width: 1.615vw;
+                height: 0.469vw;
+                margin-left: 0.71vw;
+            }
+        }
+    }
+}

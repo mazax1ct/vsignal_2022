@@ -156,7 +156,7 @@
             width: 100%;
             @media(min-width: $sm) {
                 height: 50%;
-                transition: height 0.3s ease-out;
+                transition: height 0.4s ease-in-out;
             }
             @media(min-width: $fhd) {
                 border-radius: 0.625vw;

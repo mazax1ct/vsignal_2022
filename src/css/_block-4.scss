@@ -1,0 +1,121 @@
+.b-4 {
+    padding-top: clamp(32px, 8.5vw, 40px);
+    padding-left: clamp(16px, 6vw, 40px);
+    padding-right: clamp(16px, 6vw, 40px);
+    @media(min-width: $sm) {
+        padding-top: clamp(40px, 6vw, 72px);
+    }
+    @media(min-width: $fhd) {
+        padding-top: 3.75vw;
+    }
+
+    &.dark-bg {
+        background-color: $bg-color;
+        padding-bottom: clamp(40px, 8.5vw, 56px);
+        @media(min-width: $sm) {
+            padding-bottom: clamp(40px, 6vw, 72px);
+        }
+        @media(min-width: $fhd) {
+            padding-bottom: 3.75vw;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.25;
+        margin-bottom: 48px;
+        text-align: center;
+        @media(min-width: $hd) {
+            font-size: clamp(32px, 2.6vw, 48px);
+            margin-bottom: clamp(48px, 2.6vw, 56px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 2.5vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    &__cards {
+        margin-bottom: 32px;
+        @media(min-width: $sm) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+        @media(min-width: $hd) {
+            margin-bottom: 56px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 3vw;
+        }
+
+        .person-card {
+            margin-left: auto;
+            margin-right: auto;
+            @media(min-width: $sm) {
+                margin: 0;
+            }
+
+            &:first-child {
+                transform: rotate(-6deg);
+                @media(min-width: $sm) {
+                    z-index: 1;
+                }
+            }
+
+            &:nth-child(2) {
+                transform: rotate(3deg) translateY(-12px);
+                @media(min-width: $sm) {
+                    transform: rotate(-1deg) translate(-12px, -12px);
+                }
+            }
+        }
+    }
+
+    &__text-block {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 670px;
+        text-align: center;
+        @media(min-width: $fhd) {
+            max-width: 39vw;
+        }
+    }
+
+    &__buttons {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media(min-width: 560px) {
+            flex-direction: row;
+        }
+
+        .button {
+            max-width: 240px;
+            width: 100%;
+            @media(min-width: 560px) {
+                margin-left: 12px;
+                margin-right: 12px;
+                max-width: initial;
+                width: auto;
+            }
+            @media(min-width: $fhd) {
+                margin-left: 0.625vw;
+                margin-right: 0.625vw;
+            }
+
+            &:last-child {
+                margin-top: 24px;
+                @media(min-width: 560px) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
