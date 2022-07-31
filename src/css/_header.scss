@@ -29,7 +29,7 @@
             padding-right: 80px;
         }
         @media(min-width: $fhd) {
-            min-height: 5.7vw;
+            min-height: 5.209vw;
             padding-left: 4.2vw;
             padding-right: 4.2vw;
         }
@@ -158,6 +158,10 @@
     z-index: 10;
     @media(min-width: $sm) {
         padding-top: 100px;
+    }
+    @media(min-width: $fhd) {
+        padding-top: 5.209vw;
+        padding-bottom: 3.334vw;
     }
 
     &.is-active {

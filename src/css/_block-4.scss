@@ -1,12 +1,12 @@
 .b-4 {
-    padding-top: clamp(32px, 8.5vw, 40px);
-    padding-left: clamp(16px, 6vw, 40px);
-    padding-right: clamp(16px, 6vw, 40px);
+    padding: clamp(32px, 8.5vw, 40px) clamp(16px, 6vw, 40px);
     @media(min-width: $sm) {
         padding-top: clamp(40px, 6vw, 72px);
+        padding-bottom: clamp(40px, 6vw, 72px);
     }
     @media(min-width: $fhd) {
         padding-top: 3.75vw;
+        padding-bottom: 3.75vw;
     }
 
     &.dark-bg {
