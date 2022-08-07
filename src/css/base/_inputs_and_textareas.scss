@@ -14,8 +14,8 @@
         line-height: 1.1875;
         margin-top: 12px;
         @media(min-width: $fhd) {
-            font-size: 16px;
-            margin-top: 12px;
+            font-size: 0.834vw;
+            margin-top: 0.625vw;
         }
     }
     /*&__input-container {
@@ -42,6 +42,16 @@
         .textarea {
             border-color: $error-color;
             color: $error-color;
+
+            &::placeholder {
+                color: $error-color;
+                opacity: 1;
+            }
+
+            &::-ms-input-placeholder {
+                color: $error-color;
+                opacity: 1;
+            }
         }
         /*svg {
             fill: #D43C38;
@@ -88,6 +98,26 @@
         //border-color: #fff;
     }
 
+    &::placeholder {
+        color: $text-color;
+        opacity: 1;
+    }
+
+    &::-ms-input-placeholder {
+        color: $text-color;
+        opacity: 1;
+    }
+
+    &:focus::placeholder {
+        color: $text-color;
+        opacity: 1;
+    }
+
+    &:focus::-ms-input-placeholder {
+        color: $text-color;
+        opacity: 1;
+    }
+
     &.error {
         border-color: $error-color;
         color: $error-color;
@@ -96,60 +126,24 @@
             border-color: $error-color;
             color: $error-color;
 
-            &::-webkit-input-placeholder {
+            &::placeholder {
                 color: $error-color;
             }
 
-            &::-moz-placeholder {
-                color: $error-color;
-            }
-
-            &:-ms-input-placeholder {
+            &::-ms-input-placeholder {
                 color: $error-color;
             }
         }
 
-        &::-webkit-input-placeholder {
+        &::placeholder {
             color: $error-color;
+            opacity: 1;
         }
 
-        &::-moz-placeholder {
+        &::-ms-input-placeholder {
             color: $error-color;
+            opacity: 1;
         }
-
-        &:-ms-input-placeholder {
-            color: $error-color;
-        }
-    }
-
-    &::-webkit-input-placeholder {
-        color: $text-color;
-        opacity: 1;
-    }
-
-    &::-moz-placeholder {
-        color: $text-color;
-        opacity: 1;
-    }
-
-    &:-ms-input-placeholder {
-        color: $text-color;
-        opacity: 1;
-    }
-
-    &:focus::-webkit-input-placeholder {
-        color: $text-color;
-        opacity: 1;
-    }
-
-    &:focus::-moz-placeholder {
-        color: $text-color;
-        opacity: 1;
-    }
-
-    &:focus:-ms-input-placeholder {
-        color: $text-color;
-        opacity: 1;
     }
 
     &.disabled,
@@ -162,15 +156,11 @@
             border-color: rgba($text-color, 0.5);
         }
 
-        &::-webkit-input-placeholder {
+        &::placeholder {
             color: rgba($text-color, 0.5);
         }
 
-        &::-moz-placeholder {
-            color: rgba($text-color, 0.5);
-        }
-
-        &:-ms-input-placeholder {
+        &::-ms-input-placeholder {
             color: rgba($text-color, 0.5);
         }
     }

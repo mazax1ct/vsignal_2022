@@ -1,5 +1,8 @@
 .cases {
     padding-top: 32px;
+    @media(min-width: $fhd) {
+        padding-top: 1.667vw;
+    }
 
     &__title-block {
         @media(min-width: $md) {
@@ -137,7 +140,7 @@
         min-height: 600px;
     }
     @media(min-width: $fhd) {
-        height: calc(88vh - 5.209vw);
+        height: calc(88.98vh - 5.209vw);
     }
 
     &.is-open {
