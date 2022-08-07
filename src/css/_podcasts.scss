@@ -64,6 +64,8 @@
 .podcast {
     border-radius: 12px;
     background-color: $bg-light-color;
+    display: flex;
+    flex-direction: column;
     padding: 16px;
     @media(min-width: $fhd) {
         border-radius: 0.625vw;
@@ -162,10 +164,15 @@
         align-items: flex-end;
         display: flex;
         justify-content: space-between;
+        margin-top: auto;
     }
 
     &__player {
         width: 51.8%;
+
+        .player {
+            width: 100%;
+        }
     }
 
     &__speakers-block {

@@ -7,6 +7,11 @@
             margin-left: -10px;
             margin-right: -10px;
         }
+        @media(min-width: $fhd) {
+            margin-bottom: 1.25vw;
+            margin-left: -1.25vw;
+            margin-right: -1.25vw;
+        }
     }
 
     &__cell {
@@ -17,10 +22,20 @@
             padding-right: 10px;
             width: 50%;
         }
+        @media(min-width: $fhd) {
+            margin-bottom: 1.25vw;
+            max-width: 100%;
+            padding-left: 1.25vw;
+            padding-right: 1.25vw;
+            width: 50%;
+        }
     }
 
     .textarea {
         height: 56px;
+        @media(min-width: $fhd) {
+            height: 2.917vw;
+        }
     }
 
     &__button-block {
@@ -31,6 +46,9 @@
 
         .button {
             min-width: 228px;
+            @media(min-width: $fhd) {
+                min-width: 11.875vw;
+            }
         }
     }
 
@@ -43,6 +61,10 @@
         }
         @media(min-width: $hd) {
             font-size: 16px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 0.834vw;
+            padding-left: 1.25vw;
         }
     }
 }

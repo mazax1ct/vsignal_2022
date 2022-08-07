@@ -10,7 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#31435b">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="preload" href="fonts/subset-ZonaPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/subset-ZonaPro-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -115,7 +123,7 @@
                 <div class="b-1__media">
                     <div class="video">
                         <video class="video__video" preload="none" loop="loop" muted="" poster="images/content/img_1.jpg">
-                            <source src="images/content/video.mp4">
+                            <source src="images/video.mp4">
                         </video>
                         <button class="video__play" type="button" title="Включить видео">
                             <svg aria-hidden="true">
@@ -306,76 +314,467 @@
                 <h2 class="cases__title">Наши кейсы</h2>
                 <div class="cases__filter">
                     <div class="cases__filter-list">
-                        <button class="cases__filter-button is-active" type="button">E-commerce</button>
-                        <button class="cases__filter-button" type="button">E-commerce<br> Premium</button>
-                        <button class="cases__filter-button" type="button">Медицина</button>
-                        <button class="cases__filter-button" type="button">Оздоровительные<br> центры</button>
-                        <button class="cases__filter-button" type="button">Заводы</button>
-                        <button class="cases__filter-button" type="button">Электроника</button>
-                        <button class="cases__filter-button" type="button">Одежда</button>
+                        <button class="cases__filter-button is-active" type="button" data-filter="1">E‑commerce</button>
+                        <button class="cases__filter-button" type="button" data-filter="2">E‑commerce<br> Premium</button>
+                        <button class="cases__filter-button" type="button" data-filter="3">Медицина</button>
+                        <button class="cases__filter-button" type="button" data-filter="4">Оздоровительные<br> центры</button>
+                        <button class="cases__filter-button" type="button" data-filter="5">Заводы</button>
+                        <button class="cases__filter-button" type="button" data-filter="6">Электроника</button>
+                        <button class="cases__filter-button" type="button" data-filter="7">Одежда</button>
                     </div>
                 </div>
             </div>
-            <div class="cases__slider">
-                <div class="case">
-                    <div class="case__title-block">
-                        <p class="case__title">Siberia resort &&nbsp;spa</p>
-                        <div class="case__pt-p">
-                            <div class="case__podcast-time">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="#time_line"></use>
-                                </svg>
-                                <span>1:25</span>
+        
+            <div class="js-cases cases__slider swiper horizontal-cursor">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-filter="1">
+                        <div class="case is-open">
+                            <div class="case__title-block">
+                                <p class="case__title">Siberia resort &&nbsp;spa</p>
+                                <div class="case__pt-p">
+                                    <div class="case__podcast-time">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#time_line"></use>
+                                        </svg>
+                                        <span>1:25</span>
+                                    </div>
+                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                                </div>
                             </div>
-                            <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                            <div class="case__detail">
+                                <div class="case__detail-inner">
+                                    <div class="case__detail-title-block">
+                                        <div class="case__player">
+                                            <div class="player">
+                                                <img src="images/content/player.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="case__detail-title"><a href="#">Siberia resort&nbsp;&&nbsp;spa</a></h3>
+                                    </div>
+                                    <div class="case__text">
+                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
+                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
+                                    </div>
+                                    <div class="case__nums">
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                    </div>
+                                    <div class="case__image">
+                                        <picture>
+                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
+                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="case__detail"></div>
-                </div>
-                <div class="case">
-                    <div class="case__title-block">
-                        <p class="case__title">Nikolaev.group</p>
-                        <div class="case__pt-p">
-                            <div class="case__podcast-time">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="#time_line"></use>
-                                </svg>
-                                <span>1:25</span>
+                    <div class="swiper-slide" data-filter="1">
+                        <div class="case">
+                            <div class="case__title-block">
+                                <p class="case__title">Nikolaev.group</p>
+                                <div class="case__pt-p">
+                                    <div class="case__podcast-time">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#time_line"></use>
+                                        </svg>
+                                        <span>1:25</span>
+                                    </div>
+                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                                </div>
                             </div>
-                            <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                            <div class="case__detail">
+                                <div class="case__detail-inner">
+                                    <div class="case__detail-title-block">
+                                        <div class="case__player">
+                                            <div class="player">
+                                                <img src="images/content/player.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="case__detail-title"><a href="#">Nikolaev.group</a></h3>
+                                    </div>
+                                    <div class="case__text">
+                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
+                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
+                                    </div>
+                                    <div class="case__nums">
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                    </div>
+                                    <div class="case__image">
+                                        <picture>
+                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
+                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="case__detail"></div>
-                </div>
-                <div class="case">
-                    <div class="case__title-block">
-                        <p class="case__title">GoldUnionHouse</p>
-                        <div class="case__pt-p">
-                            <div class="case__podcast-time">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="#time_line"></use>
-                                </svg>
-                                <span>1:25</span>
+                    <div class="swiper-slide" data-filter="1">
+                        <div class="case">
+                            <div class="case__title-block">
+                                <p class="case__title">GoldUnionHouse</p>
+                                <div class="case__pt-p">
+                                    <div class="case__podcast-time">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#time_line"></use>
+                                        </svg>
+                                        <span>1:25</span>
+                                    </div>
+                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                                </div>
                             </div>
-                            <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                            <div class="case__detail">
+                                <div class="case__detail-inner">
+                                    <div class="case__detail-title-block">
+                                        <div class="case__player">
+                                            <div class="player">
+                                                <img src="images/content/player.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="case__detail-title"><a href="#">GoldUnionHouse</a></h3>
+                                    </div>
+                                    <div class="case__text">
+                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
+                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
+                                    </div>
+                                    <div class="case__nums">
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                    </div>
+                                    <div class="case__image">
+                                        <picture>
+                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
+                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="case__detail"></div>
-                </div>
-                <div class="case">
-                    <div class="case__title-block">
-                        <p class="case__title">Digital Razor</p>
-                        <div class="case__pt-p">
-                            <div class="case__podcast-time">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="#time_line"></use>
-                                </svg>
-                                <span>1:25</span>
+                    <div class="swiper-slide" data-filter="2">
+                        <div class="case">
+                            <div class="case__title-block">
+                                <p class="case__title">Digital Razor</p>
+                                <div class="case__pt-p">
+                                    <div class="case__podcast-time">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#time_line"></use>
+                                        </svg>
+                                        <span>1:25</span>
+                                    </div>
+                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                                </div>
                             </div>
-                            <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                            <div class="case__detail">
+                                <div class="case__detail-inner">
+                                    <div class="case__detail-title-block">
+                                        <div class="case__player">
+                                            <div class="player">
+                                                <img src="images/content/player.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="case__detail-title"><a href="#">Digital Razor</a></h3>
+                                    </div>
+                                    <div class="case__text">
+                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
+                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
+                                    </div>
+                                    <div class="case__nums">
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                    </div>
+                                    <div class="case__image">
+                                        <picture>
+                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
+                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="case__detail"></div>
+                    <div class="swiper-slide" data-filter="3">
+                        <div class="case">
+                            <div class="case__title-block">
+                                <p class="case__title">Siberia resort &&nbsp;spa</p>
+                                <div class="case__pt-p">
+                                    <div class="case__podcast-time">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#time_line"></use>
+                                        </svg>
+                                        <span>1:25</span>
+                                    </div>
+                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                                </div>
+                            </div>
+                            <div class="case__detail">
+                                <div class="case__detail-inner">
+                                    <div class="case__detail-title-block">
+                                        <div class="case__player">
+                                            <div class="player">
+                                                <img src="images/content/player.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="case__detail-title"><a href="#">Siberia resort&nbsp;&&nbsp;spa</a></h3>
+                                    </div>
+                                    <div class="case__text">
+                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
+                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
+                                    </div>
+                                    <div class="case__nums">
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                    </div>
+                                    <div class="case__image">
+                                        <picture>
+                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
+                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-filter="3">
+                        <div class="case">
+                            <div class="case__title-block">
+                                <p class="case__title">Nikolaev.group</p>
+                                <div class="case__pt-p">
+                                    <div class="case__podcast-time">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#time_line"></use>
+                                        </svg>
+                                        <span>1:25</span>
+                                    </div>
+                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                                </div>
+                            </div>
+                            <div class="case__detail">
+                                <div class="case__detail-inner">
+                                    <div class="case__detail-title-block">
+                                        <div class="case__player">
+                                            <div class="player">
+                                                <img src="images/content/player.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="case__detail-title"><a href="#">Nikolaev.group</a></h3>
+                                    </div>
+                                    <div class="case__text">
+                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
+                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
+                                    </div>
+                                    <div class="case__nums">
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                    </div>
+                                    <div class="case__image">
+                                        <picture>
+                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
+                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-filter="3">
+                        <div class="case">
+                            <div class="case__title-block">
+                                <p class="case__title">GoldUnionHouse</p>
+                                <div class="case__pt-p">
+                                    <div class="case__podcast-time">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#time_line"></use>
+                                        </svg>
+                                        <span>1:25</span>
+                                    </div>
+                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                                </div>
+                            </div>
+                            <div class="case__detail">
+                                <div class="case__detail-inner">
+                                    <div class="case__detail-title-block">
+                                        <div class="case__player">
+                                            <div class="player">
+                                                <img src="images/content/player.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="case__detail-title"><a href="#">GoldUnionHouse</a></h3>
+                                    </div>
+                                    <div class="case__text">
+                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
+                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
+                                    </div>
+                                    <div class="case__nums">
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                    </div>
+                                    <div class="case__image">
+                                        <picture>
+                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
+                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-filter="3">
+                        <div class="case">
+                            <div class="case__title-block">
+                                <p class="case__title">Digital Razor</p>
+                                <div class="case__pt-p">
+                                    <div class="case__podcast-time">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#time_line"></use>
+                                        </svg>
+                                        <span>1:25</span>
+                                    </div>
+                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
+                                </div>
+                            </div>
+                            <div class="case__detail">
+                                <div class="case__detail-inner">
+                                    <div class="case__detail-title-block">
+                                        <div class="case__player">
+                                            <div class="player">
+                                                <img src="images/content/player.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="case__detail-title"><a href="#">Digital Razor</a></h3>
+                                    </div>
+                                    <div class="case__text">
+                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
+                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
+                                    </div>
+                                    <div class="case__nums">
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                        <div class="case__nums-item">
+                                            <p class="case__nums-title">285</p>
+                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+                                        </div>
+                                    </div>
+                                    <div class="case__image">
+                                        <picture>
+                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
+                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -556,7 +955,9 @@
                             </div>
                             <div class="podcast__details">
                                 <div class="podcast__player">
-                                    <img src="images/content/player_2.svg" alt="">
+                                    <div class="player">
+                                        <img src="images/content/player_2.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="podcast__speakers-block">
                                     <p class="podcast__speakers-title">Спикеры:</p>
@@ -592,7 +993,9 @@
                             </div>
                             <div class="podcast__details">
                                 <div class="podcast__player">
-                                    <img src="images/content/player_2.svg" alt="">
+                                    <div class="player">
+                                        <img src="images/content/player_2.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="podcast__speakers-block">
                                     <p class="podcast__speakers-title">Спикеры:</p>
@@ -619,16 +1022,16 @@
             <div class="podcasts-gallery">
                 <div class="podcasts-gallery__filter">
                     <div class="podcasts-gallery__filter-list">
-                        <button class="podcasts-gallery__filter-button is-active" type="button">Дизайн</button>
-                        <button class="podcasts-gallery__filter-button" type="button">Консалтинг</button>
-                        <button class="podcasts-gallery__filter-button" type="button">Разработка</button>
-                        <button class="podcasts-gallery__filter-button" type="button">Продвижение</button>
+                        <button class="podcasts-gallery__filter-button is-active" type="button" data-filter="1">Дизайн</button>
+                        <button class="podcasts-gallery__filter-button" type="button" data-filter="2">Консалтинг</button>
+                        <button class="podcasts-gallery__filter-button" type="button" data-filter="3">Разработка</button>
+                        <button class="podcasts-gallery__filter-button" type="button" data-filter="4">Продвижение</button>
                     </div>
                 </div>
         
-                <div class="podcasts-gallery__slider js-podcasts swiper">
+                <div class="js-podcasts podcasts-gallery__slider swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="1">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -637,7 +1040,7 @@
                                 <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="1">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -646,7 +1049,7 @@
                                 <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="2">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -655,7 +1058,7 @@
                                 <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="3">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -664,7 +1067,7 @@
                                 <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="4">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -673,7 +1076,7 @@
                                 <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="4">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -682,7 +1085,7 @@
                                 <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="4">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -691,7 +1094,7 @@
                                 <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="4">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -700,7 +1103,7 @@
                                 <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="4">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -709,7 +1112,7 @@
                                 <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-filter="4">
                             <a class="podcast-card" href="#">
                                 <span class="podcast-card__image">
                                     <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -835,7 +1238,9 @@
 
 <script src="js/main.js"></script>
 
+<script src="js/video.js"></script>
 <script src="js/solutions-list.js"></script>
+<script src="js/cases.js"></script>
 <script src="js/services-slider.js"></script>
 <script src="js/podcasts.js"></script>
 

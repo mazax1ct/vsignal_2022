@@ -21,7 +21,9 @@
                     </div>
                     <div class="podcast__details">
                         <div class="podcast__player">
-                            <img src="images/content/player_2.svg" alt="">
+                            <div class="player">
+                                <img src="images/content/player_2.svg" alt="">
+                            </div>
                         </div>
                         <div class="podcast__speakers-block">
                             <p class="podcast__speakers-title">Спикеры:</p>
@@ -57,7 +59,9 @@
                     </div>
                     <div class="podcast__details">
                         <div class="podcast__player">
-                            <img src="images/content/player_2.svg" alt="">
+                            <div class="player">
+                                <img src="images/content/player_2.svg" alt="">
+                            </div>
                         </div>
                         <div class="podcast__speakers-block">
                             <p class="podcast__speakers-title">Спикеры:</p>
@@ -84,16 +88,16 @@
     <div class="podcasts-gallery">
         <div class="podcasts-gallery__filter">
             <div class="podcasts-gallery__filter-list">
-                <button class="podcasts-gallery__filter-button is-active" type="button">Дизайн</button>
-                <button class="podcasts-gallery__filter-button" type="button">Консалтинг</button>
-                <button class="podcasts-gallery__filter-button" type="button">Разработка</button>
-                <button class="podcasts-gallery__filter-button" type="button">Продвижение</button>
+                <button class="podcasts-gallery__filter-button is-active" type="button" data-filter="1">Дизайн</button>
+                <button class="podcasts-gallery__filter-button" type="button" data-filter="2">Консалтинг</button>
+                <button class="podcasts-gallery__filter-button" type="button" data-filter="3">Разработка</button>
+                <button class="podcasts-gallery__filter-button" type="button" data-filter="4">Продвижение</button>
             </div>
         </div>
 
-        <div class="podcasts-gallery__slider js-podcasts swiper">
+        <div class="js-podcasts podcasts-gallery__slider swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="1">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -102,7 +106,7 @@
                         <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                     </a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="1">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -111,7 +115,7 @@
                         <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                     </a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="2">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -120,7 +124,7 @@
                         <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                     </a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="3">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -129,7 +133,7 @@
                         <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                     </a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="4">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -138,7 +142,7 @@
                         <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                     </a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="4">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -147,7 +151,7 @@
                         <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                     </a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="4">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -156,7 +160,7 @@
                         <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                     </a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="4">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -165,7 +169,7 @@
                         <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                     </a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="4">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
@@ -174,7 +178,7 @@
                         <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
                     </a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-filter="4">
                     <a class="podcast-card" href="#">
                         <span class="podcast-card__image">
                             <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">

@@ -3,6 +3,9 @@
     border-radius: 12px;
     display: none;
     width: 100%;
+    @media(min-width: $fhd) {
+        border-radius: 0.625vw;
+    }
 
     &.fancybox-content {
         max-width: 1132px;
@@ -14,6 +17,10 @@
         }
         @media(min-width: $hd) {
             padding: 80px 56px;
+        }
+        @media(min-width: $fhd) {
+            max-width: 58.96vw;
+            padding: 4.167vw 2.917vw;
         }
     }
 
@@ -29,9 +36,15 @@
         @media(min-width: $hd) {
             font-size: 48px;
         }
+        @media(min-width: $hd) {
+            font-size: 2.5vw;
+        }
 
         &:not(:last-child) {
             margin-bottom: 24px;
+            @media(min-width: $fhd) {
+                margin-bottom: 1.25vw;
+            }
         }
     }
 
@@ -40,6 +53,9 @@
 
         &:not(:last-child) {
             margin-bottom: 24px;
+            @media(min-width: $fhd) {
+                margin-bottom: 1.25vw;
+            }
         }
     }
 
@@ -54,6 +70,10 @@
         @media(min-width: $hd) {
             padding-left: 56px;
             padding-right: 56px;
+        }
+        @media(min-width: $fhd) {
+            border-radius: 0.625vw;
+            padding: 2.084vw 2.917vw;
         }
     }
 }
@@ -76,6 +96,12 @@
                 right: 10px;
                 top: 10px;
             }
+            @media(min-width: $fhd) {
+                height: 2.917vw;
+                right: 0.521vw;
+                top: 0.521vw;
+                width: 2.917vw;
+            }
 
             &:active,
             &:focus,
@@ -87,6 +113,10 @@
                 fill: $text-color;
                 height: 26px;
                 width: 26px;
+                @media(min-width: $fhd) {
+                    height: 1.355vw;
+                    width: 1.355vw;
+                }
             }
         }
     }

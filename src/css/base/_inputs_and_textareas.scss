@@ -13,6 +13,10 @@
         font-size: 16px;
         line-height: 1.1875;
         margin-top: 12px;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            margin-top: 12px;
+        }
     }
     /*&__input-container {
         display: block;
@@ -72,6 +76,12 @@
     padding: 16px 0;
     transition: border-color 0.3s;
     width: 100%;
+    @media(min-width: $fhd) {
+        border-bottom-width: 0.105vw;
+        font-size: 0.938vw;
+        padding-top: 0.834vw;
+        padding-bottom: 0.834vw;
+    }
 
     &:focus,
     &:hover {
@@ -175,6 +185,9 @@ textarea {
 
 .input {
     height: 56px;
+    @media(min-width: $fhd) {
+        height: 2.917vw;
+    }
 }
 
 .textarea {
@@ -182,6 +195,9 @@ textarea {
     resize: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    @media(min-width: $fhd) {
+        height: 130px;
+    }
 
     &::-webkit-scrollbar {
         display: none;
