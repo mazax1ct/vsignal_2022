@@ -1,0 +1,86 @@
+.b-8 {
+    padding: 40px clamp(20px, 5.3vw, 72px);
+    @media(min-width: $sm) {
+        padding-left: clamp(72px, 5vw, 80px);
+        padding-right: clamp(72px, 5vw, 80px);
+    }
+    @media(min-width: $hd) {
+        padding-left: clamp(80px, 8vw, 160px);
+        padding-right: clamp(80px, 8vw, 160px);
+    }
+    @media(min-width: $fhd) {
+        padding: 2.5vw 8.334vw;
+    }
+
+    &__title-block {
+        margin-bottom: 24px;
+        text-align: center;
+        @media(min-width: $hd) {
+            align-items: flex-start;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 1.667vw;
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 0;
+        }
+        @media(min-width: $fhd) {
+            font-size: 2.5vw;
+            font-weight: 900;
+        }
+    }
+
+    &__player {}
+
+    &__text-block {
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            margin-bottom: clamp(24px, 5vw, 54px);
+            max-width: 1214px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 2.813vw;
+            max-width: 63.23vw;
+        }
+    }
+
+    &__image {
+        @media(min-width: $hd) {
+            border-radius: 32px 32px 0 0;
+            margin-bottom: -40px;
+            margin-left: -64px;
+            margin-right: -64px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: -2.5vw;
+            margin-left: -8.334vw;
+            margin-right: -8.334vw;
+        }
+
+        picture {
+            display: block;
+        }
+
+        img {
+            border-radius: 24px;
+            display: block;
+            width: 100%;
+            @media(min-width: $hd) {
+                border-radius: 32px 32px 0 0;
+            }
+            @media(min-width: $fhd) {
+                border-radius: 1.667vw 1.667vw 0 0;
+            }
+        }
+    }
+}

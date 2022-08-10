@@ -1,0 +1,92 @@
+.b-10 {
+    padding: clamp(32px, 8.5vw, 40px) clamp(24px, 6vw, 112px);
+    @media(min-width: $sm) {
+        padding-top: clamp(40px, 6vw, 72px);
+        padding-bottom: clamp(40px, 6vw, 72px);
+    }
+    @media(min-width: $md) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    @media(min-width: $hd) {
+        padding-left: clamp(112px, 10vw, 248px);
+        padding-right: clamp(112px, 10vw, 248px);
+    }
+    @media(min-width: $fhd) {
+        padding: 3.75vw 12.917vw;
+    }
+
+    &__card {
+        margin-bottom: 48px;
+        transform: rotate(-6deg);
+        @media(min-width: $md) {
+            margin-bottom: 0;
+            width: calc(100% - 540px - 80px);
+        }
+        @media(min-width: $fhd) {
+            width: calc(100% - 35.417vw - 4.167vw);
+        }
+
+        .person-card {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__text-block {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 540px;
+        @media(min-width: $md) {
+            margin-right: 0;
+        }
+        @media(min-width: $hd) {
+            max-width: clamp(540px, 36vw, 680px);
+        }
+        @media(min-width: $fhd) {
+            max-width: 35.417vw;
+        }
+    }
+
+    &__title {
+        font-size: clamp(40px, 6.3vw, 48px);
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            font-size: clamp(48px, 3.2vw, 56px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 2.917vw;
+            margin-bottom: 2.084vw;
+        }
+    }
+
+    &__text {
+        margin-bottom: 32px;
+        text-align: center;
+        @media(min-width: $sm) {
+            text-align: left;
+        }
+        @media(min-width: $md) {
+            min-width: 540px;
+        }
+    }
+
+    &__button-block {
+        text-align: center;
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            margin-bottom: 32px;
+            @media(min-width: $sm) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

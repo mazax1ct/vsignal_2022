@@ -1,0 +1,27 @@
+.b-9 {
+    padding: 40px 16px;
+    @media(min-width: $fhd) {
+        padding-top: 2.084vw;
+        padding-bottom: 3.334vw;
+    }
+
+    &.dark-bg {
+        background-color: $bg-color;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.25;
+        margin-bottom: 32px;
+        text-align: center;
+        @media(min-width: $hd) {
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: clamp(32px, 5vw, 64px);
+        }
+        @media(min-width: $hd) {
+            font-size: 2.5vw;
+            margin-bottom: 3.334vw;
+        }
+    }
+}

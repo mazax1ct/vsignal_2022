@@ -16,12 +16,7 @@
         padding-left: 11.5vw;
         padding-right: 11.5vw;
     }
-    /*&:not(:last-child) {
-        margin-bottom: clamp(40px, 8.5vw, 64px);
-        @media(min-width: $sm) {
-            margin-bottom: clamp(40px, 6vw, 72px);
-        }
-    }*/
+
     &.dark-bg {
         background-color: $bg-color;
         padding-bottom: clamp(40px, 8.5vw, 56px);

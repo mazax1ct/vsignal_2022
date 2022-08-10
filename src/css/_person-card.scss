@@ -7,10 +7,10 @@
     text-align: center;
     width: 100%;
     @media(min-width: $sm) {
-        max-width: 340px;
+        max-width: 380px;
     }
     @media(min-width: $hd) {
-        max-width: 380px;
+        max-width: clamp(380px, 30vw, 470px);
         padding: 24px 24px 32px;
     }
     @media(min-width: $fhd) {

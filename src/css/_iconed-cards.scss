@@ -1,0 +1,97 @@
+.iconed-cards {
+    margin-left: auto;
+    margin-right: auto;
+
+    &__list {
+        display: grid;
+        grid-row-gap: 24px;
+        list-style: none;
+        margin: 0;
+        @media(min-width: $sm) {
+            grid-row-gap: 40px;
+        }
+        @media(min-width: $md) {
+            grid-template-columns: fit-content(492px) fit-content(492px) fit-content(492px);
+            grid-column-gap: 24px;
+            justify-content: center;
+        }
+        @media(min-width: $hd) {
+            grid-column-gap: clamp(24px, 2.5vw, 40px);
+        }
+        @media(min-width: $fhd) {
+            grid-column-gap: 2.084vw;
+            grid-row-gap: 2.084vw;
+            grid-template-columns: fit-content(25.625vw) fit-content(25.625vw) fit-content(25.625vw);
+        }
+    }
+
+    &__item {
+        display: flex;
+    }
+}
+
+.iconed-card {
+    background-color: $bg-light-color;
+    border-radius: 24px;
+    font-weight: 600;
+    padding: 32px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 390px;
+    min-height: 325px;
+    @media(min-width: $sm) and (max-width: $md - 1px) {
+        font-size: 18px;
+        min-height: 376px;
+        max-width: 492px;
+        padding: 40px 54px 54px;
+    }
+    @media(min-width: $md) {
+        padding: clamp(32px, 2.5vw, 40px) clamp(20px, 2.5vw, 54px) clamp(32px, 2.5vw, 54px);
+    }
+    @media(min-width: $hd) {
+        max-width: clamp(390px, 30vw, 492px);
+    }
+    @media(min-width: $fhd) {
+        border-radius: 1.25vw;
+        font-size: 0.938vw;
+        max-width: 25.625vw;
+        padding: 2.084vw 2.813vw 2.813vw;
+    }
+
+    &__icon {
+        margin-bottom: 24px;
+        text-align: center;
+        @media(min-width: $fhd) {
+            margin-bottom: 1.25vw;
+        }
+
+        img {
+            @media(min-width: $fhd) {
+                width: 4.167vw;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.16666;
+        text-align: center;
+        @media(min-width: $sm) and (max-width: $md - 1px) {
+            font-size: 36px;
+        }
+        @media(min-width: $hd) {
+            font-size: clamp(24px, 2vw, 36px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 1.875vw;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            @media(min-width: $fhd) {
+                margin-bottom: 1.25vw;
+            }
+        }
+    }
+}
