@@ -1,0 +1,155 @@
+.b-14 {
+    padding: 40px 24px;
+    @media(min-width: $md) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    @media(min-width: $md) {
+        padding: clamp(40px, 4vw, 72px) clamp(24px, 2.5vw, 80px);
+    }
+    @media(min-width: $hd) {
+        padding-left: clamp(24px, 4vw, 80px);
+        padding-right: clamp(24px, 4vw, 80px);
+    }
+    @media(min-width: $fhd) {
+        padding: 3.75vw 4.167vw;
+    }
+
+    &__text-block {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 520px;
+        margin-bottom: 48px;
+        @media(min-width: $sm) {
+            margin-bottom: 56px;
+        }
+        @media(min-width: $md) {
+            margin: 0;
+            max-width: 49%;
+        }
+        @media(min-width: $fhd) {
+            max-width: 45%;
+        }
+    }
+
+    &__title {
+        font-size: clamp(40px, 8.5vw, 64px);
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: clamp(16px, 8vw, 24px);
+        text-align: center;
+        @media(min-width: $sm) {
+            text-align: left;
+        }
+        @media(min-width: $md) {
+            font-size: clamp(64px, 6vw, 96px);
+            margin-bottom: clamp(24px, 2.4vw, 40px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 5vw;
+            margin-bottom: 2.084vw;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.33333;
+        margin-bottom: 32px;
+        text-align: center;
+        @media(min-width: $sm) {
+            font-size: 20px;
+            margin-bottom: 56px;
+            text-align: left;
+        }
+        @media(min-width: $md) {
+            font-size: clamp(20px, 2vw, 32px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 1.667vw;
+        }
+    }
+
+    &__bottom {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media(min-width: $sm) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media(min-width: $md) {
+            justify-content: flex-start;
+        }
+
+        .button {
+            margin-bottom: 32px;
+            white-space: nowrap;
+            @media(min-width: $sm) {
+                margin-bottom: 0;
+            }
+            @media(min-width: $md) and (max-width: $hd - 1px) {
+                margin-right: 48px;
+                margin-bottom: 32px;
+            }
+            @media(min-width: $hd) {
+                margin-right: 48px;
+            }
+            @media(min-width: $fhd) {
+                margin-right: 2.5vw;
+            }
+        }
+
+        .player {
+            @media(min-width: $md) and (max-width: $hd - 1px) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 540px;
+        @media(min-width: $md) {
+            margin: 0;
+            padding-left: 40px;
+        }
+        @media(min-width: $hd) {
+            max-width: clamp(540px, 46vw, 1020px);
+        }
+        @media(min-width: $fhd) {
+            max-width: 50%;
+            padding-left: 2.084vw;
+            width: 50%;
+        }
+
+        .person-card {
+            margin-left: auto;
+            margin-right: auto;
+            @media(min-width: $sm) {
+                margin: 0;
+            }
+
+            &:first-child {
+                transform: rotate(-5deg);
+                z-index: 1;
+            }
+
+            &:nth-child(2) {
+                transform: rotate(1deg) translateX(-6px);
+                @media(min-width: $sm) {
+                    transform: rotate(-1deg) translateX(-12px);
+                }
+                @media(min-width: $fhd) {
+                    transform: rotate(-1deg) translateX(-0.625vw);
+                }
+            }
+        }
+    }
+}

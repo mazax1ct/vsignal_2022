@@ -1,0 +1,125 @@
+.hiw-slider {
+    .swiper-wrapper {
+        display: block;
+        @media(min-width: $sm) {
+            display: flex;
+        }
+    }
+
+    .swiper-slide {
+        width: auto;
+
+        &:first-child {
+            .hiw-slide {
+                @media(min-width: $sm) {
+                    padding-left: 72px;
+                }
+                @media(min-width: $fhd) {
+                    padding-left: 4.167vw;
+                }
+            }
+        }
+
+        &:last-child {
+            .hiw-slide {
+                @media(min-width: $sm) {
+                    padding-right: 72px;
+                }
+                @media(min-width: $fhd) {
+                    padding-right: 4.167vw;
+                }
+            }
+        }
+    }
+}
+
+.hiw-slide {
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    @media(min-width: $sm) {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 0;
+        padding-right: 56px;
+        text-align: left;
+    }
+    @media(min-width: $fhd) {
+        padding-right: 2.813vw;
+    }
+
+    &__text-block {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-bottom: 0;
+            padding-left: 32px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 0.938vw;
+            padding-left: 1.667vw;
+        }
+    }
+
+    &__number {
+        font-size: 180px;
+        font-weight: 900;
+        line-height: 1.17777;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+            @media(min-width: $sm) {
+                margin-bottom: 0;
+            }
+        }
+        @media(min-width: $sm) {
+            font-size: 250px;
+            line-height: 195px;
+            margin-top: auto;
+            order: 1;
+        }
+        @media(min-width: $fhd) {
+            font-size: 13.021vw;
+            line-height: 10.157vw;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.16666;
+        @media(min-width: $fhd) {
+            font-size: 1.875vw;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            @media(min-width: $fhd) {
+                margin-bottom: 1.25vw;
+            }
+        }
+    }
+
+    &__image {
+        img {
+            border-radius: 12px;
+            display: block;
+            width: 100%;
+            @media(min-width: $fhd) {
+                border-radius: 0.625vw;
+            }
+        }
+        @media(min-width: $sm) {
+            margin-bottom: -40px;
+            width: 425px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: -2.084vw;
+            width: 22.136vw;
+        }
+    }
+}

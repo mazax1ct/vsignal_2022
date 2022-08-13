@@ -84,6 +84,12 @@
             <path d="M4,18c-0.6,0-1-0.4-1-1V7c0-0.6,0.4-1,1-1s1,0.4,1,1v10C5,17.6,4.6,18,4,18z" />
             <path d="M1,18c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v16C2,17.6,1.6,18,1,18z" />
         </symbol>
+        <symbol id="slider_prev" viewBox="0 0 20 20">
+            <path d="M14.7,20c-0.3,0-0.5-0.1-0.7-0.3L4.3,10L14,0.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L7.1,10l8.3,8.3c0.4,0.4,0.4,1,0,1.4C15.2,19.9,15,20,14.7,20z" />
+        </symbol>
+        <symbol id="slider_next" viewBox="0 0 20 20">
+            <path d="M5.3,0C5.5,0,5.8,0.1,6,0.3l9.7,9.7L6,19.7c-0.4,0.4-1,0.4-1.4,0s-0.4-1,0-1.4l8.3-8.3L4.6,1.7c-0.4-0.4-0.4-1,0-1.4C4.8,0.1,5,0,5.3,0z" />
+        </symbol>
     </svg>
 
     <header class="header compensate-for-scrollbar">
@@ -212,7 +218,7 @@
             </div>
         </section>
 
-        <section class="b-11">
+        <section class="b-11 dark-bg">
             <div class="b-11__text-block">
                 <div class="b-11__title-block">
                     <h2 class="b-11__title">Что предлагаем мы?</h2>
@@ -228,7 +234,58 @@
                 </div>
             </div>
             <div class="b-11__slider">
-                сладйер
+                <div class="js-hiw-slider hiw-slider swiper horizontal-cursor">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hiw-slide">
+                                <div class="hiw-slide__text-block">
+                                    <p class="hiw-slide__number">1</p>
+                                    <h3 class="hiw-slide__title">Погружаемся</h3>
+                                    <p class="hiw-slide__text">Погружаемся в ваш бизнес и<br> изучаем его особенности</p>
+                                </div>
+                                <div class="hiw-slide__image">
+                                    <img src="images/content/solution/img_2.jpg" srcset="images/content/solution/img_2@2x.jpg 2x" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hiw-slide">
+                                <div class="hiw-slide__text-block">
+                                    <p class="hiw-slide__number">2</p>
+                                    <h3 class="hiw-slide__title">Разрабатываем</h3>
+                                    <p class="hiw-slide__text">Разрабатываем стратегию<br> развития вашей компании в<br> digital на год</p>
+                                </div>
+                                <div class="hiw-slide__image">
+                                    <img src="images/content/solution/img_3.jpg" srcset="images/content/solution/img_3@2x.jpg 2x" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hiw-slide">
+                                <div class="hiw-slide__text-block">
+                                    <p class="hiw-slide__number">3</p>
+                                    <h3 class="hiw-slide__title">Реализовываем</h3>
+                                    <p class="hiw-slide__text">Реализовываем стратегию<br> по этапам, в рамках<br> утверждённого плана</p>
+                                </div>
+                                <div class="hiw-slide__image">
+                                    <img src="images/content/solution/img_4.jpg" srcset="images/content/solution/img_4@2x.jpg 2x" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hiw-slide">
+                                <div class="hiw-slide__text-block">
+                                    <p class="hiw-slide__number">4</p>
+                                    <h3 class="hiw-slide__title">Гарантируем</h3>
+                                    <p class="hiw-slide__text">Гарантируем получение<br> результата</p>
+                                </div>
+                                <div class="hiw-slide__image">
+                                    <img src="images/content/solution/img_5.jpg" srcset="images/content/solution/img_5@2x.jpg 2x" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -247,9 +304,58 @@
             </div>
             <div class="b-12__text-block">
                 <h2 class="b-12__title">Как мы это<br> делаем?</h2>
-                <p>Поиск и привлечение новых возможностей для продаж</p>
-                <p>Мы поможем вам позиционировать себя так, чтобы общаться с вашими потенциальными клиентами. Обладая более чем 15-летним опытом маркетинга в технологической отрасли, VSignal имеет возможности для предоставления комплексных маркетинговых
-                    решений, которые помогут вам получить новые перспективы.</p>
+                <div class="b-12__text">
+                    <p>Поиск и привлечение новых возможностей для продаж</p>
+                    <p>
+                        Мы поможем вам позиционировать себя так, чтобы общаться с вашими потенциальными клиентами. Обладая более чем 15-летним опытом маркетинга в технологической отрасли, VSignal имеет возможности для предоставления комплексных маркетинговых
+                        решений, которые помогут вам получить новые перспективы.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="b-13 dark-bg">
+            <h2 class="b-13__title">Наши кейсы</h2>
+            <div class="cases-slider">
+                <div class="cases-slider__slider-block">
+                    <div class="js-cases-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="case-slide" href="#">
+                                    <img src="images/content/solution/case_1.jpg" srcset="images/content/solution/case_1@2x.jpg 2x" alt="название кейса">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="case-slide" href="#">
+                                    <img src="images/content/solution/case_2.jpg" srcset="images/content/solution/case_2@2x.jpg 2x" alt="название кейса">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="case-slide" href="#">
+                                    <img src="images/content/solution/case_3.jpg" srcset="images/content/solution/case_3@2x.jpg 2x" alt="название кейса">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cases-slider__prev" type="button" title="Назад">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#slider_prev"></use>
+                        </svg>
+                    </button>
+                    <button class="cases-slider__next" type="button" title="Вперёд">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#slider_next"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="cases-slider__button-block">
+                    <a class="button button--type_2" href="#">
+                        Все кейсы
+                        <svg class="arrow-right" aria-hidden="true">
+                            <use xlink:href="#arrow_right"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -356,6 +462,8 @@
 <script src="js/header.js"></script>
 
 <script src="js/main.js"></script>
+<script src="js/hiw-slider.js"></script>
 <script src="js/video.js"></script>
+<script src="js/cases-slider.js"></script>
 
 </html>

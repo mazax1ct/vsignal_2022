@@ -1,0 +1,92 @@
+.b-16 {
+    background-color: #fff;
+    padding: clamp(32px, 8.5vw, 40px) clamp(24px, 8.5vw, 40px);
+    @media(min-width: $sm) {
+        padding: clamp(40px, 5.2vw, 64px) clamp(40px, 5.4vw, 80px);
+    }
+    @media(min-width: $fhd) {
+        padding: 3.334vw 4.167vw;
+    }
+
+    &__text-block {
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            margin-bottom: 48px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 2.5vw;
+        }
+    }
+
+    &__title-block {
+        margin-bottom: 32px;
+        text-align: center;
+        @media(min-width: $sm) {
+            align-items: flex-start;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 1.667vw;
+        }
+
+        .button {
+            white-space: nowrap;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.33333;
+        max-width: 725px;
+        margin-bottom: 32px;
+        @media(min-width: $sm) {
+            font-size: clamp(24px, 3.2vw, 32px);
+            margin-bottom: 0;
+            margin-right: 32px;
+        }
+        @media(min-width: $hd) {
+            font-size: clamp(32px, 2.6vw, 48px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 2.5vw;
+            max-width: 37.761vw;
+            margin-right: 1.667vw;
+        }
+    }
+
+    &__text {
+        max-width: 980px;
+        @media(min-width: $fhd) {
+            max-width: 60.417vw;
+        }
+    }
+
+    &__logos {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -16px;
+
+        img {
+            margin-right: 16px;
+            margin-bottom: 16px;
+            max-width: 27%;
+            @media(min-width: $sm) {
+                margin-right: 40px;
+                max-width: 10%;
+            }
+            @media(min-width: $hd) {
+                margin-right: 72px;
+                max-width: 20%;
+            }
+            @media(min-width: $fhd) {
+                margin-bottom: 0.834vw;
+                margin-right: 5vw;
+                max-width: 100%;
+            }
+        }
+    }
+}

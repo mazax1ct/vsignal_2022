@@ -16,10 +16,6 @@
         padding-bottom: 3.75vw;
     }
 
-    &.dark-bg {
-        background-color: $bg-color;
-    }
-
     &__text-block {
         @media(min-width: $hd) {
             padding-left: 48px;

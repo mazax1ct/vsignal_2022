@@ -1,0 +1,104 @@
+.b-15 {
+    padding: clamp(40px, 8.5vw, 48px) clamp(12px, 6vw, 72px);
+    text-align: center;
+    @media(min-width: $md) {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: clamp(72px, 6vw, 80px);
+        padding-right: clamp(72px, 6vw, 80px);
+        text-align: left;
+    }
+    @media(min-width: $hd) {
+        padding-top: clamp(48px, 6vw, 56px);
+        padding-bottom: clamp(48px, 6vw, 56px);
+    }
+    @media(min-width: $fhd) {
+        padding: 2.917vw 4.167vw;
+    }
+
+    &__text-block {
+        flex-grow: 1;
+        margin-bottom: 32px;
+        @media(min-width: $md) {
+            padding-left: clamp(40px, 3.2vw, 72px);
+        }
+        @media(min-width: $fhd) {
+            padding-left: 3.75vw;
+        }
+    }
+
+    &__title {
+        font-size: clamp(40px, 7.3vw, 56px);
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 580px;
+        @media(min-width: $md) {
+            font-size: clamp(56px, 5.4vw, 64px);
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 100%;
+        }
+        @media(min-width: $hd) {
+            font-size: clamp(64px, 5vw, 96px);
+            line-height: 1.125;
+            margin-bottom: clamp(24px, 2vw, 40px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 5vw;
+            margin-bottom: 2.084vw;
+        }
+    }
+
+    &__text {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 480px;
+        @media(min-width: $md) {
+            font-size: clamp(16px, 8vw, 20px);
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 72%;
+        }
+        @media(min-width: $hd) {
+            font-size: clamp(20px, 1.6vw, 32px);
+            line-height: 1.25;
+        }
+        @media(min-width: $fhd) {
+            font-size: 1.667vw;
+        }
+
+        p {
+            &:not(:last-child) {
+                @media(max-width: $md - 1px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__image {
+        @media(max-width: $md - 1px) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 624px;
+        }
+        @media(min-width: $md) {
+            min-width: 31%;
+        }
+
+        img {
+            border-radius: 24px;
+            box-shadow: 0 0 10px 0 rgba(#000, 0.15);
+            display: block;
+            width: 100%;
+            @media(min-width: $fhd) {
+                border-radius: 1.667vw;
+                box-shadow: 0 0 0.521vw 0 rgba(#000, 0.15);
+            }
+        }
+    }
+}

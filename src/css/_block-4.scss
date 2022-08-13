@@ -10,7 +10,6 @@
     }
 
     &.dark-bg {
-        background-color: $bg-color;
         padding-bottom: clamp(40px, 8.5vw, 56px);
         @media(min-width: $sm) {
             padding-bottom: clamp(40px, 6vw, 72px);
@@ -72,6 +71,9 @@
                 transform: rotate(3deg) translateY(-12px);
                 @media(min-width: $sm) {
                     transform: rotate(-1deg) translate(-12px, -12px);
+                }
+                @media(min-width: $fhd) {
+                    transform: rotate(-1deg) translate(-0.625vw, -0.625vw);
                 }
             }
         }

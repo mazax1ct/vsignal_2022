@@ -84,6 +84,12 @@
             <path d="M4,18c-0.6,0-1-0.4-1-1V7c0-0.6,0.4-1,1-1s1,0.4,1,1v10C5,17.6,4.6,18,4,18z" />
             <path d="M1,18c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v16C2,17.6,1.6,18,1,18z" />
         </symbol>
+        <symbol id="slider_prev" viewBox="0 0 20 20">
+            <path d="M14.7,20c-0.3,0-0.5-0.1-0.7-0.3L4.3,10L14,0.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L7.1,10l8.3,8.3c0.4,0.4,0.4,1,0,1.4C15.2,19.9,15,20,14.7,20z" />
+        </symbol>
+        <symbol id="slider_next" viewBox="0 0 20 20">
+            <path d="M5.3,0C5.5,0,5.8,0.1,6,0.3l9.7,9.7L6,19.7c-0.4,0.4-1,0.4-1.4,0s-0.4-1,0-1.4l8.3-8.3L4.6,1.7c-0.4-0.4-0.4-1,0-1.4C4.8,0.1,5,0,5.3,0z" />
+        </symbol>
     </svg>
 
     <header class="header compensate-for-scrollbar">
@@ -131,7 +137,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="js-cases cases__slider swiper horizontal-cursor">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" data-filter="1">
@@ -580,6 +586,21 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cases-note">
+                        <div class="cases-note__inner">
+                            <p class="cases-note__title">Мы на<br> связи!</p>
+                            <p class="cases-note__text">
+                                Хотите успешно развивать бизнес?<br>
+                                Давайте сделаем это вместе уже сегодня!
+                            </p>
+                            <button class="button button--type_2" type="button" data-fancybox="feedbackPopup_cases" data-src="#feedbackPopup">
+                                Написать нам
+                                <svg class="arrow-right" aria-hidden="true">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>

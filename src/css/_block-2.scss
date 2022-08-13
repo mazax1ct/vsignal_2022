@@ -18,7 +18,6 @@
     }
 
     &.dark-bg {
-        background-color: $bg-color;
         padding-bottom: clamp(40px, 8.5vw, 56px);
         @media(min-width: $sm) {
             padding-bottom: clamp(40px, 6vw, 72px);

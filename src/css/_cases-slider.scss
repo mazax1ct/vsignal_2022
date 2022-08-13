@@ -1,0 +1,99 @@
+.cases-slider {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1618px;
+    @media(min-width: $fhd) {
+        max-width: 84.271vw;
+    }
+
+    &__slider-block {
+        padding-left: 44px;
+        padding-right: 44px;
+        position: relative;
+        z-index: 0;
+        @media(min-width: $fhd) {
+            padding-left: 3.75vw;
+            padding-right: 3.75vw;
+        }
+    }
+
+    &__next,
+    &__prev {
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid $text-color;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        left: 50%;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color 0.3s;
+        width: 32px;
+        z-index: 1;
+        @media(min-width: $fhd) {
+            border-width: 0.105vw;
+            height: 2.5vw;
+            width: 2.5vw;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: $text-color;
+
+            svg {
+                fill: $bg-color;
+            }
+        }
+
+        svg {
+            fill: $text-color;
+            height: 12px;
+            transition: fill 0.3s;
+            width: 12px;
+            @media(min-width: $fhd) {
+                height: 1.042vw;
+                width: 1.042vw;
+            }
+        }
+    }
+
+    &__prev {
+        left: 0;
+    }
+
+    &__next {
+        left: auto;
+        right: 0;
+    }
+
+    &__button-block {
+        margin-top: 40px;
+        text-align: center;
+        @media(min-width: $fhd) {
+            margin-top: 2.084vw;
+        }
+    }
+
+    .swiper-slide {
+        @media(min-width: $fhd) {
+            margin-right: 1.25vw !important;
+            width: 24.74vw !important;
+        }
+    }
+}
+
+.case-slide {
+    img {
+        border-radius: 12px;
+        display: block;
+        width: 100%;
+        @media(min-width: $fhd) {
+            border-radius: 0.625vw;
+        }
+    }
+}

@@ -8,10 +8,7 @@ $(document).ready(function () {
         observeSlideChildren: true,
         slidesPerView: 'auto',
         spaceBetween: 0,
-        freeMode: true,
-        pagination: {
-          clickable: true,
-        }
+        freeMode: true
     });
 
     var filter = $('.cases__filter-button.is-active').attr('data-filter');

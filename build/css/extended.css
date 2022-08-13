@@ -1,0 +1,29 @@
+@media(max-width: 1899px) {
+  .b-14 .person-card {
+    padding: min(3%, 24px) min(3.5%, 24px) min(4%, 32px);
+  }
+
+  .b-14 .person-card img {
+    margin-bottom: min(5%, 16px);
+  }
+
+  .b-14 .person-card__title {
+    font-size: clamp(12px, 4vw, 18px);
+    margin-bottom: min(5%, 16px);
+  }
+
+  .b-14 .person-card__text {
+    font-size: clamp(10px, 2.5vw, 14px);
+    padding-top: min(5%, 16px);
+  }
+}
+
+@media(min-width: 1200px) and (max-width: 1899px) {
+  .b-14 .person-card__title {
+    font-size: clamp(18px, 1.6vw, 32px);
+  }
+
+  .b-14 .person-card__text {
+    font-size: clamp(14px, 1vw, 24px);
+  }
+}
