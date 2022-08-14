@@ -1,6 +1,10 @@
 .b-17 {
     padding-top: clamp(32px, 8.5vw, 48px);
     padding-bottom: clamp(32px, 8.5vw, 48px);
+    @media(min-width: $fhd) {
+        padding-top: 2.5vw;
+        padding-bottom: 2.5vw;
+    }
 
     &__title {
         font-size: 32px;
@@ -8,5 +12,53 @@
         line-height: 1.25;
         margin-bottom: 32px;
         text-align: center;
+        @media(min-width: $sm) {
+            padding-left: clamp(40px, 6vw, 80px);
+            padding-right: clamp(40px, 6vw, 80px);
+            text-align: left;
+        }
+        @media(min-width: $hd) {
+            font-size: clamp(32px, 6vw, 40px);
+            margin-bottom: clamp(32px, 6vw, 40px);
+            padding-left: clamp(80px, 8.4vw, 160px);
+            padding-right: clamp(80px, 8.4vw, 160px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 2.084vw;
+            margin-bottom: 2.084vw;
+            padding-left: 8.334vw;
+            padding-right: 8.334vw;
+        }
+    }
+
+    &__slider {
+        .swiper {
+            -webkit-mask: linear-gradient(90deg, transparent 0, $bg-color 1% 99%, transparent) 0 50% / 100% 100% no-repeat, linear-gradient(0deg, $bg-color, $bg-color) 50% 0 / 100% 0 no-repeat, linear-gradient(0deg, $bg-color, $bg-color) 50% 100% / 100% 0 no-repeat;
+        }
+
+        .swiper-slide {
+            height: auto;
+            max-width: clamp(344px, 54vw, 410px);
+            padding-left: 10px;
+            padding-right: 10px;
+            @media(min-width: $sm) {
+                max-width: clamp(410px, 54vw, 444px);
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+            @media(min-width: $hd) {
+                max-width: clamp(444px, 54vw, 480px);
+            }
+            @media(min-width: $fhd) {
+                max-width: 28.542vw;
+                padding-left: 1.459vw;
+                padding-right: 1.459vw;
+            }
+        }
+
+        .service-card {
+            height: 100%;
+            max-width: 100%;
+        }
     }
 }

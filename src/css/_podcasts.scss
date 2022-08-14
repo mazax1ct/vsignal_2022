@@ -215,11 +215,17 @@
         &:nth-child(2) {
             margin-left: -8px;
             z-index: 1;
+            @media(min-width: $fhd) {
+                margin-left: -0.417vw;
+            }
         }
 
         &:nth-child(3) {
             margin-left: -8px;
             z-index: 2;
+            @media(min-width: $fhd) {
+                margin-left: -0.417vw;
+            }
         }
 
         img {

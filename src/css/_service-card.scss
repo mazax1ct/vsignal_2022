@@ -17,6 +17,10 @@
         padding: 2.084vw 2.917vw;
     }
 
+    &--type_2 {
+        color: $text-color;
+    }
+
     &:hover {
         background-color: $bg-heavy-color;
         border-color: $bg-heavy-color;
@@ -38,7 +42,7 @@
             margin-bottom: clamp(24px, 8.5vw, 32px);
         }
         @media(min-width: $fhd) {
-            font-size: 1.875vw;
+            font-size: 1.667vw;
             margin-bottom: 1.667vw;
             margin-left: -1.25vw;
             margin-right: -1.25vw;
@@ -56,6 +60,18 @@
         @media(min-width: $fhd) {
             font-size: 1.875vw;
         }
+    }
+
+    &__small-price {
+        font-size: 20px;
+        font-weight: 900;
+        @media(min-width: $fhd) {
+            font-size: 1.25vw;
+        }
+    }
+
+    *:not(.service-card__price) + .service-card__button {
+        margin-top: auto;
     }
 
     &__button {

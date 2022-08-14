@@ -1,0 +1,99 @@
+.b-19 {
+    padding: clamp(32px, 8.5vw, 40px) clamp(24px, 5vw, 56px);
+    @media(min-width: $sm) {
+        padding: clamp(40px, 5.2vw, 64px) clamp(56px, 6vw, 80px);
+    }
+    @media(min-width: 1600px) {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+    @media(min-width: $fhd) {
+        padding-left: 12.917vw;
+        padding-right: 12.917vw;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        @media(max-width: $md - 1px) {
+            text-align: center;
+        }
+        @media(min-width: $sm) {
+            font-size: clamp(24px, 6vw, 32px);
+        }
+        @media(min-width: $hd) {
+            font-size: clamp(32px, 6vw, 48px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 2.5vw;
+            margin-bottom: 1.25vw;
+        }
+    }
+
+    &__text-block {
+        margin-bottom: 40px;
+        @media(max-width: $md - 1px) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 620px;
+            text-align: center;
+        }
+        @media(min-width: $md) and (max-width: $fhd - 1px) {
+            max-width: 90%;
+        }
+        @media(min-width: $fhd) {
+            font-size: 1.25vw;
+            line-height: 1.33333;
+            letter-spacing: 0.0267vw;
+            margin-bottom: 2.084vw;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-gap: 24px;
+        justify-content: center;
+        @media(min-width: $sm) {
+            grid-template-columns: max-content max-content;
+        }
+        @media(min-width: $hd) {
+            grid-template-columns: max-content max-content max-content;
+            justify-content: flex-start;
+        }
+        @media(min-width: $hd) {
+            grid-column-gap: calc((100% - 27.94vw * 3)/ 2);
+        }
+        @media(min-width: 1600px) {
+            grid-column-gap: calc((100% - 25.94vw * 3)/ 2);
+        }
+        @media(min-width: $fhd) {
+            grid-column-gap: calc((100% - 23.67vw * 3)/ 2);
+            grid-row-gap: 1.25vw;
+        }
+
+        .service-card {
+            max-width: 316px;
+            padding: 24px;
+            @media(min-width: $hd) {
+                min-width: 336px;
+                max-width: 100%;
+                padding: 2.084vw 1.667vw;
+                width: 27.94vw;
+            }
+            @media(min-width: 1600px) {
+                width: 25.94vw;
+            }
+            @media(min-width: $fhd) {
+                width: 23.67vw;
+            }
+        }
+
+        .service-card__title {
+            @media(max-width: $fhd - 1px) {
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
