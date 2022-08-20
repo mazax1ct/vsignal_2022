@@ -1,0 +1,96 @@
+.design-block {
+    @media(min-width: $hd) {
+        align-items: center;
+        display: flex;
+    }
+
+    &__text-block {
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            margin-bottom: 0;
+            width: 45%;
+        }
+        @media(min-width: $fhd) {
+            width: 50%;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        @media(min-width: $hd) {
+            font-size: 1.25vw;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+            @media(min-width: $hd) {
+                margin-bottom: 0.625vw;
+            }
+        }
+    }
+
+    &__colors {
+        display: flex;
+        flex-wrap: wrap;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+            @media(min-width: $sm) {
+                margin-bottom: 0.625vw;
+            }
+        }
+    }
+
+    &__color {
+        border-radius: 4px;
+        box-shadow: 0 0 6px 0 rgba(#000, 0.15);
+        height: 56px;
+        width: 56px;
+        @media(min-width: $sm) {
+            height: 80px;
+            width: 80px;
+        }
+        @media(min-width: $fhd) {
+            border-radius: 0.209vw;
+            box-shadow: 0 0 0.313vw 0 rgba(#000, 0.15);
+            height: 6.042vw;
+            width: 6.042vw;
+        }
+
+        &:not(:last-child) {
+            margin-right: 8px;
+            margin-bottom: 8px;
+            @media(min-width: $sm) {
+                margin-right: 12px;
+                margin-bottom: 12px;
+            }
+            @media(min-width: $sm) {
+                margin-right: 0.625vw;
+                margin-bottom: 0.625vw;
+            }
+        }
+    }
+
+    &__media {
+        @media(min-width: $hd) {
+            width: 55%;
+        }
+        @media(min-width: $fhd) {
+            width: 50%;
+        }
+
+        img {
+            border-radius: clamp(12px, 6vw, 32px);
+            box-shadow: 0 0 10px 0 rgba(#000, 0.15);
+            display: block;
+            width: 100%;
+            @media(min-width: $hd) {
+                border-radius: 32px 0 0 32px;
+            }
+            @media(min-width: $fhd) {
+                border-radius: 1.667vw 0 0 1.667vw;
+                box-shadow: 0 0 0.521vw 0 rgba(#000, 0.15);
+            }
+        }
+    }
+}

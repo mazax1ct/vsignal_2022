@@ -6,11 +6,10 @@
         justify-content: space-between;
     }
     @media(min-width: $md) {
-        padding: clamp(40px, 4vw, 72px) clamp(24px, 2.5vw, 80px);
+        padding: clamp(40px, 4vw, 64px) clamp(24px, 2.5vw, 80px);
     }
     @media(min-width: $hd) {
-        padding-left: clamp(24px, 4vw, 80px);
-        padding-right: clamp(24px, 4vw, 80px);
+        padding: 64px 80px;
     }
     @media(min-width: $fhd) {
         padding: 3.75vw 4.167vw;
@@ -26,10 +25,8 @@
         }
         @media(min-width: $md) {
             margin: 0;
-            max-width: 49%;
-        }
-        @media(min-width: $fhd) {
-            max-width: 45%;
+            max-width: 100%;
+            width: 49%;
         }
     }
 
@@ -43,7 +40,7 @@
             text-align: left;
         }
         @media(min-width: $md) {
-            font-size: clamp(64px, 6vw, 96px);
+            font-size: clamp(64px, 5vw, 96px);
             margin-bottom: clamp(24px, 2.4vw, 40px);
         }
         @media(min-width: $fhd) {
@@ -116,17 +113,17 @@
         margin-left: auto;
         margin-right: auto;
         max-width: 540px;
+        width: 100%;
         @media(min-width: $md) {
             margin: 0;
             padding-left: 40px;
         }
         @media(min-width: $hd) {
-            max-width: clamp(540px, 46vw, 1020px);
+            max-width: 100%;
+            width: 51%;
         }
         @media(min-width: $fhd) {
-            max-width: 50%;
             padding-left: 2.084vw;
-            width: 50%;
         }
 
         .person-card {

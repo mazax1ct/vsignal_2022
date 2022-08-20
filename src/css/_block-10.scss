@@ -4,11 +4,6 @@
         padding-top: clamp(40px, 6vw, 72px);
         padding-bottom: clamp(40px, 6vw, 72px);
     }
-    @media(min-width: $md) {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
     @media(min-width: $hd) {
         padding-left: clamp(112px, 10vw, 248px);
         padding-right: clamp(112px, 10vw, 248px);
@@ -17,15 +12,74 @@
         padding: 3.75vw 12.917vw;
     }
 
+    &--type_1 {
+        @media(min-width: $md) {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .b-10__card {
+            @media(min-width: $md) {
+                width: calc(100% - 540px - 80px);
+            }
+            @media(min-width: $fhd) {
+                width: calc(100% - 35.417vw - 4.167vw);
+            }
+        }
+
+        .b-10__text-block {
+            @media(min-width: $hd) {
+                max-width: clamp(540px, 36vw, 680px);
+            }
+            @media(min-width: $fhd) {
+                max-width: 35.417vw;
+            }
+        }
+    }
+
+    &--type_2 {
+        @media(min-width: $md) {
+            display: grid;
+            grid-template-columns: 34% clamp(540px, 36vw, 680px);
+            grid-column-gap: 56px;
+        }
+        @media(min-width: $hd) {
+            grid-column-gap: 72px;
+        }
+        @media(min-width: $fhd) {
+            grid-column-gap: 3.75vw;
+            grid-template-columns: 46% 35.417vw;
+        }
+
+        .b-10__title {
+            text-align: center;
+            @media(min-width: $md) {
+                grid-row: 1;
+                grid-column: 2;
+                text-align: left;
+            }
+        }
+
+        .b-10__card {
+            @media(min-width: $md) {
+                grid-column: 1;
+                grid-row: span 3;
+            }
+        }
+
+        .b-10__text-block {
+            @media(min-width: $md) {
+                grid-column: 2;
+            }
+        }
+    }
+
     &__card {
         margin-bottom: 48px;
         transform: rotate(-6deg);
         @media(min-width: $md) {
             margin-bottom: 0;
-            width: calc(100% - 540px - 80px);
-        }
-        @media(min-width: $fhd) {
-            width: calc(100% - 35.417vw - 4.167vw);
         }
 
         .person-card {
@@ -40,12 +94,7 @@
         max-width: 540px;
         @media(min-width: $md) {
             margin-right: 0;
-        }
-        @media(min-width: $hd) {
-            max-width: clamp(540px, 36vw, 680px);
-        }
-        @media(min-width: $fhd) {
-            max-width: 35.417vw;
+            max-width: 100%;
         }
     }
 
@@ -89,6 +138,9 @@
         }
         @media(min-width: $md) {
             min-width: 540px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 1.25vw;
         }
     }
 

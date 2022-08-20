@@ -8,8 +8,7 @@
         padding-right: 140px;
     }
     @media(min-width: $fhd) {
-        padding-left: 12.917vw;
-        padding-right: 12.917vw;
+        padding: 3.334vw 12.917vw;
     }
 
     &__title {
@@ -55,37 +54,25 @@
         grid-gap: 24px;
         justify-content: center;
         @media(min-width: $sm) {
-            grid-template-columns: max-content max-content;
+            grid-template-columns: 1fr 1fr;
         }
         @media(min-width: $hd) {
-            grid-template-columns: max-content max-content max-content;
+            grid-template-columns: 1fr 1fr 1fr;
             justify-content: flex-start;
         }
-        @media(min-width: $hd) {
-            grid-column-gap: calc((100% - 27.94vw * 3)/ 2);
-        }
-        @media(min-width: 1600px) {
-            grid-column-gap: calc((100% - 25.94vw * 3)/ 2);
-        }
         @media(min-width: $fhd) {
-            grid-column-gap: calc((100% - 23.67vw * 3)/ 2);
-            grid-row-gap: 1.25vw;
+            grid-gap: 1.667vw;
         }
 
         .service-card {
-            max-width: 316px;
+            max-width: 336px;
             padding: 24px;
+            @media(min-width: $sm) {
+                max-width: 100%;
+            }
             @media(min-width: $hd) {
-                min-width: 336px;
                 max-width: 100%;
                 padding: 2.084vw 1.667vw;
-                width: 27.94vw;
-            }
-            @media(min-width: 1600px) {
-                width: 25.94vw;
-            }
-            @media(min-width: $fhd) {
-                width: 23.67vw;
             }
         }
 
