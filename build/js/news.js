@@ -2,7 +2,7 @@ var podcastsSlider;
 
 $(document).ready(function () {
   podcastsSlider = new Swiper(
-    ".js-podcasts", {
+    '.js-podcasts', {
       observer: true,
       observeSlideChildren: true,
       slidesPerView: 'auto',

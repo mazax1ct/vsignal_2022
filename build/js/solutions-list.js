@@ -1,5 +1,5 @@
-var solutions = new Swiper(
-  ".js-solutions", {
+const solutions = new Swiper(
+  '.js-solutions', {
     slidesPerView: 'auto',
     spaceBetween: 0,
     freeMode: true,

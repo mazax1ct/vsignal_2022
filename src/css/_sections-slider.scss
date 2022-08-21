@@ -1,0 +1,16 @@
+.sections-slider {
+    & > .swiper-wrapper {
+        @media(max-width: $md - 1px) {
+            display: block;
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        height: auto;
+
+        & > * {
+            width: 100%;
+        }
+    }
+}

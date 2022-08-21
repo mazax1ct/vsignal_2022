@@ -80,6 +80,17 @@ ul {
     }
 }
 
+.no-list {
+    li {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+            @media(min-width: $fhd) {
+                margin-bottom: 0.834vw;
+            }
+        }
+    }
+}
+
 p {
     &:not(:last-child) {
         margin-bottom: 28px;

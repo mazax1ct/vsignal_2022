@@ -1,0 +1,57 @@
+.title-block {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-bottom: 24px;
+        text-align: center;
+        width: 100%;
+        @media(min-width: $md) {
+            margin-right: auto;
+            width: auto;
+        }
+        @media(min-width: $hd) {
+            font-size: clamp(32px, 2.6vw, 48px);
+        }
+        @media(min-width: $fhd) {
+            font-size: 2.5vw;
+            margin-bottom: 2.5vw;
+        }
+    }
+
+    &__center {
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            margin-right: auto;
+        }
+        @media(min-width: $md) {
+            order: 3;
+            margin-left: auto;
+            margin-right: 0;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 2.5vw;
+        }
+    }
+
+    &__right {
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            margin-left: auto;
+        }
+        @media(min-width: $md) {
+            order: 2;
+            margin-right: auto;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 2.5vw;
+        }
+    }
+
+    &__player {}
+}
