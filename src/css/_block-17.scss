@@ -47,25 +47,18 @@
 
         .swiper-slide {
             height: auto;
+            margin-right: 12px;
             width: 340px;
             @media(min-width: $sm) {
+                margin-right: 24px;
                 width: 410px;
             }
             @media(min-width: $hd) {
                 width: 480px;
             }
             @media(min-width: $fhd) {
+                margin-right: 2.917vw;
                 width: 25.521vw;
-            }
-
-            &:not(:last-child) {
-                margin-right: 12px;
-                @media(min-width: $sm) {
-                    margin-right: 24px;
-                }
-                @media(min-width: $fhd) {
-                    margin-right: 2.917vw;
-                }
             }
         }
 

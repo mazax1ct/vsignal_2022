@@ -3,4 +3,5 @@ const servicesSlider = new Swiper(
     slidesPerView: 'auto',
     spaceBetween: 0,
     freeMode: true,
+    slidesOffsetBefore: '12'
 });

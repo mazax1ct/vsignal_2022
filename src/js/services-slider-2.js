@@ -11,13 +11,11 @@ $('.js-services-slider-2').each(function(index, element) {
       spaceBetween: 0,
       freeMode: true,
       slidesOffsetBefore: '12',
-      slidesOffsetAfter: '12',
       observer: true,
       observeParents: true,
       breakpoints: {
         768: {
-          slidesOffsetBefore: sliderOffset,
-          slidesOffsetAfter: sliderOffset
+          slidesOffsetBefore: sliderOffset
         }
       }
     });
