@@ -9,9 +9,9 @@ function scrollBarWidth() {
 }
 
 var header = $('.header'),
-		scrollPrev = 0;
+    scrollPrev = 0;
 
-$(window).scroll(function() {
+var resize_scroll = function(e) {
 	var scrolled = $(window).scrollTop();
 
   if ( scrolled > $('.header').height()*2 ) {
@@ -26,7 +26,15 @@ $(window).scroll(function() {
 		header.removeClass('out');
 	}
 	scrollPrev = scrolled;
+};
+
+$(document).ready(function() {
+  //запуск функции навешивания класса на шапку
+  resize_scroll();
 });
+
+//перезапуск функции навешивания класса на шапку при скролле и ресайзе
+$(window).on("scroll", resize_scroll).on("resize", resize_scroll);
 
 $(document).on('click', '.js-menu-toggler', function () {
   if(!$(this).hasClass('is-active')) {

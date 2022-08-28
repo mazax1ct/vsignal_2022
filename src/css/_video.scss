@@ -6,8 +6,15 @@
         display: block;
         filter: drop-shadow(0 0 12px rgba(#000, 0.15));
         width: 100%;
+        @media(min-width: $sm) {
+            border-radius: 24px;
+        }
         @media(min-width: $hd) {
+            border-radius: 32px;
             filter: drop-shadow(0 0 0.625vw rgba(#000, 0.15));
+        }
+        @media(min-width: $hd) {
+            border-radius: 1.667vw;
         }
     }
 
@@ -31,6 +38,7 @@
         width: clamp(56px, 12.5vw, 96px);
         z-index: 1;
         @media(min-width: $hd) {
+            backdrop-filter: blur(1.042vw);
             filter: drop-shadow(0 0.157vw 0.157vw rgba(#000, 0.15));
         }
         @media(min-width: $fhd) {

@@ -2,21 +2,19 @@
     background-color: $bg-color;
     box-shadow: 0 4px 4px 0 rgba(#000, 0.15);
     left: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
+    transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
     z-index: 10;
     @media(min-width: $fhd) {
         box-shadow: 0 0.2091vw 0.2091vw 0 rgba(#000, 0.15);
     }
 
-    &.scrolled {
-        position: fixed;
-        transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
-    }
-
     &.out {
-        transform: translateY(-100%);
+        @media(min-width: $md) {
+            transform: translateY(-100%);
+        }
     }
 
     &__inner {

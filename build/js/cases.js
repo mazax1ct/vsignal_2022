@@ -28,8 +28,24 @@ $(document).ready(function () {
 });
 
 $(document).on('click', '.case__title-block', function () {
-  $('.case').removeClass('is-open');
-  $(this).parent('.case').addClass('is-open');
+  var that = $(this);
+  if($('body').width() < 1024) {
+    if(!that.parent('.case').hasClass('is-open')) {
+      $('.case').removeClass('is-open');
+      setTimeout(function() {
+        var topOffset = that.offset().top - $('.header').height();
+        $('html, body').animate({
+          scrollTop: topOffset
+        }, 300);
+        setTimeout(function() {
+          that.parent('.case').addClass('is-open');
+        },300);
+      },1000);
+    }
+  } else {
+    $('.case').removeClass('is-open');
+    that.parent('.case').addClass('is-open');
+  }
   return false;
 });
 
