@@ -11,6 +11,8 @@
         font-weight: 900;
         line-height: 1.25;
         margin-bottom: 32px;
+        padding-left: 12px;
+        padding-right: 12px;
         text-align: center;
         @media(min-width: $sm) {
             padding-left: clamp(40px, 6vw, 80px);

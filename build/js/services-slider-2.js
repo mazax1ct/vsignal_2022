@@ -13,16 +13,16 @@ $('.js-services-slider-2').each(function(index, element) {
       slidesOffsetBefore: '12',
       observer: true,
       observeParents: true,
-      /*breakpoints: {
+      breakpoints: {
         768: {
           slidesOffsetBefore: sliderOffset
         }
-      }*/
+      }
     });
 
-    /*swiperInstances[index].on('resize', function () {
+    swiperInstances[index].on('resize', function () {
       var sliderOffset = parseInt($('.b-17__title').css('padding-left'));
       swiperInstances[index].params.slidesOffsetBefore = sliderOffset;
       swiperInstances[index].update();
-    });*/
+    });
 });
