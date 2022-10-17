@@ -52,11 +52,13 @@
 
     &__filter-list {
         display: inline-flex;
+        padding-top: 4px;
         padding-left: 8px;
         padding-right: 8px;
         position: relative;
         z-index: 1;
         @media(min-width: $fhd) {
+            padding-top: 0.2085vw;
             padding-left: 0.417vw;
             padding-right: 0.417vw;
         }
@@ -66,7 +68,7 @@
         background-color: #fff;
         border-radius: 8px 8px 0 0;
         border: none;
-        box-shadow: 0 4px 4px 0 rgba(#000, 0.25);
+        box-shadow: 0 0 4px 0 rgba(#000, 0.25);
         cursor: pointer;
         font-size: 12px;
         font-weight: 700;
@@ -75,6 +77,7 @@
         transition: background-color 0.3s, color 0.3s;
         @media(min-width: $fhd) {
             border-radius: 0.625vw 0.625vw 0 0;
+            box-shadow: 0 0 0.2085vw 0 rgba(#000, 0.25);
             font-size: 0.938vw;
             line-height: 1.22222;
             padding: 0.625vw 1.25vw;
