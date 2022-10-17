@@ -3,13 +3,45 @@
     @media(min-width: $sm) {
         padding: clamp(40px, 8.5vw, 56px) clamp(16px, 8.5vw, 80px);
     }
-    @media(min-width: $hd) {
-        align-items: flex-start;
-        display: flex;
-        justify-content: space-between;
-    }
     @media(min-width: $fhd) {
         padding: 2.917vw 4.167vw;
+    }
+
+    &__inner {
+        margin-bottom: 32px;
+        @media(min-width: $hd) {
+            align-items: flex-start;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 2.917vw;
+        }
+    }
+
+    &__slider {
+        margin-left: -16px;
+        margin-right: -16px;
+        @media(min-width: $sm) {
+            margin-left: clamp(-80px, -8.5vw, 16px);
+            margin-right: clamp(-80px, -8.5vw, 16px);
+        }
+        @media(min-width: $hd) {
+            border: 1px solid $text-color;
+            border-radius: 64px;
+            overflow: hidden;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @media(min-width: $fhd) {
+            border-radius: 3.334vw;
+        }
+
+        .solutions__item {
+            @media(min-width: 1200px) {
+                width: calc(25% + 1px);
+            }
+        }
     }
 
     &__text-block {

@@ -2,6 +2,7 @@
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 4px rgba(#000, 0.25);
+    border: 1px solid rgba($text-color, 0.05);
     max-width: 320px;
     padding: 20px 20px 30px;
     text-align: center;
@@ -22,6 +23,7 @@
 
     img {
         border-radius: 8px;
+        border: 1px solid rgba($text-color, 0.05);
         display: block;
         margin-bottom: 16px;
         width: 100%;

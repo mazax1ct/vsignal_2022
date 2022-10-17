@@ -1,5 +1,6 @@
 .b-1 {
-    background-color: $bg-color;
+    //background-color: $bg-color;
+    background-color: #fff;
     padding: clamp(40px, 8.5vw, 64px) clamp(12px, 4vw, 64px);
     text-align: center;
     @media(min-width: $hd) {

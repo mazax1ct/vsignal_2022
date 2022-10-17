@@ -295,7 +295,8 @@
     }
 
     &__detail-inner {
-        background-color: $bg-color;
+        //background-color: $bg-color;
+        background-color: #fff;
         box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.15) inset;
         display: flex;
         flex-direction: column;

@@ -58,8 +58,40 @@
 
     &__text {
         max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
         @media(min-width: $hd) {
+            margin-left: 0;
+            margin-right: 0;
             max-width: 49%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            @media(min-width: $fhd) {
+                margin-bottom: 2.5vw;
+            }
+        }
+    }
+
+    &__slider {
+        margin-left: clamp(-80px, -4vw, -20px);
+        margin-right: clamp(-80px, -4vw, -20px);
+        @media(min-width: $hd) {
+            border: 1px solid $text-color;
+            border-radius: 64px;
+            overflow: hidden;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @media(min-width: $fhd) {
+            border-radius: 3.334vw;
+        }
+
+        .solutions__item {
+            @media(min-width: 1200px) {
+                width: 25%;
+            }
         }
     }
 }

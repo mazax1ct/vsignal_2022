@@ -1,5 +1,6 @@
 .header {
-    background-color: $bg-color;
+    //background-color: $bg-color;
+    background-color: #fff;
     box-shadow: 0 4px 4px 0 rgba(#000, 0.15);
     left: 0;
     position: fixed;
@@ -152,7 +153,8 @@
 }
 
 .main-menu {
-    background: url("../images/backgrounds/main-menu.jpg") no-repeat 50% 50% / cover $bg-color;
+    //background: url("../images/backgrounds/main-menu.jpg") no-repeat 50% 50% / cover $bg-color;
+    background-color: #fff;
     bottom: 0;
     display: none;
     flex-direction: column;

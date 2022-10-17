@@ -111,7 +111,7 @@
         align-items: baseline;
         display: flex;
         font-size: 20px;
-        font-weight: 600;
+        //font-weight: 600;
         line-height: 1.6;
         letter-spacing: 0.5px;
         margin-bottom: 16px;
@@ -123,7 +123,7 @@
             width: 54%;
         }
         @media(min-width: $fhd) {
-            font-size: 1.459vw;
+            font-size: 2.188vw;
         }
 
         &:not(:last-child) {
@@ -156,6 +156,7 @@
             margin-right: 48px;
         }
         @media(min-width: $fhd) {
+            font-size: 1.667vw;
             height: 2.5vw;
             min-width: 2.5vw;
             margin-right: 3.334vw;
