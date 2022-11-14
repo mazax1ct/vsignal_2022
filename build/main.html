@@ -801,7 +801,7 @@
                 </p>
             </div>
             <div class="b-5__slider-block">
-                <div class="js-services-slider swiper horizontal-cursor">
+                <div class="js-services-slider swiper horizontal-cursor" style="perspective: 1200px">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="service-card">
@@ -936,12 +936,214 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="swiper-slide swiper-no-swiping last"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--//= template/block-6.html-->
+        <section class="b-6 dark-bg">
+            <h2 class="b-6__title">Подкасты VSignal</h2>
+        
+            <h3 class="b-6__subtitle">Актуальное</h3>
+        
+            <div class="podcasts">
+                <div class="podcasts__list">
+                    <div class="podcasts__item">
+                        <div class="podcast podcast--type_1">
+                            <div class="podcast__tags">
+                                <span class="podcast__tag">Консалтинг</span>
+                            </div>
+                            <div class="podcast__info">
+                                <div class="podcast__image">
+                                    <img src="images/content/podcasts/img_1.jpg" srcset="images/content/podcasts/img_1@2x.jpg 2x" alt="Название подкаста">
+                                </div>
+                                <div class="podcast__about">
+                                    <h4 class="podcast__title">Консалтинг это...</h4>
+                                    <p>Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня. Несколько тезисов о консалтинге от Vsignal...</p>
+                                </div>
+                            </div>
+                            <div class="podcast__details">
+                                <div class="podcast__player">
+                                    <div class="player">
+                                        <img src="images/content/player_2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="podcast__speakers-block">
+                                    <p class="podcast__speakers-title">Спикеры:</p>
+                                    <div class="podcast__speakers">
+                                        <div class="podcast__speaker">
+                                            <img src="images/content/podcasts/img_2.jpg" srcset="images/content/podcasts/img_2@2x.jpg 2x" alt="Имя спикера">
+                                        </div>
+                                        <div class="podcast__speaker">
+                                            <img src="images/content/podcasts/img_2.jpg" srcset="images/content/podcasts/img_2@2x.jpg 2x" alt="Имя спикера">
+                                        </div>
+                                        <div class="podcast__speaker">
+                                            <img src="images/content/podcasts/img_2.jpg" srcset="images/content/podcasts/img_2@2x.jpg 2x" alt="Имя спикера">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="podcasts__item">
+                        <div class="podcast podcast--type_1">
+                            <div class="podcast__tags">
+                                <span class="podcast__tag">Разработка</span>
+                                <span class="podcast__tag">Дизайн</span>
+                            </div>
+                            <div class="podcast__info">
+                                <div class="podcast__image">
+                                    <img src="images/content/podcasts/img_1.jpg" srcset="images/content/podcasts/img_1@2x.jpg 2x" alt="Название подкаста">
+                                </div>
+                                <div class="podcast__about">
+                                    <h4 class="podcast__title">Длинное название для проверки переполненности контентом</h4>
+                                    <p>Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня. Несколько тезисов о консалтинге от Vsignal...</p>
+                                </div>
+                            </div>
+                            <div class="podcast__details">
+                                <div class="podcast__player">
+                                    <div class="player">
+                                        <img src="images/content/player_2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="podcast__speakers-block">
+                                    <p class="podcast__speakers-title">Спикеры:</p>
+                                    <div class="podcast__speakers">
+                                        <div class="podcast__speaker">
+                                            <img src="images/content/podcasts/img_2.jpg" srcset="images/content/podcasts/img_2@2x.jpg 2x" alt="Имя спикера">
+                                        </div>
+                                        <div class="podcast__speaker">
+                                            <img src="images/content/podcasts/img_2.jpg" srcset="images/content/podcasts/img_2@2x.jpg 2x" alt="Имя спикера">
+                                        </div>
+                                        <div class="podcast__speaker">
+                                            <img src="images/content/podcasts/img_2.jpg" srcset="images/content/podcasts/img_2@2x.jpg 2x" alt="Имя спикера">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h3 class="b-6__subtitle">Галерея подкастов</h3>
+        
+            <div class="podcasts-gallery">
+                <div class="podcasts-gallery__filter">
+                    <div class="podcasts-gallery__filter-list">
+                        <button class="podcasts-gallery__filter-button is-active" type="button" data-filter="1">Дизайн</button>
+                        <button class="podcasts-gallery__filter-button" type="button" data-filter="2">Консалтинг</button>
+                        <button class="podcasts-gallery__filter-button" type="button" data-filter="3">Разработка</button>
+                        <button class="podcasts-gallery__filter-button" type="button" data-filter="4">Продвижение</button>
+                    </div>
+                </div>
+        
+                <div class="js-podcasts podcasts-gallery__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-filter="1">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Консалтинг это...</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-filter="1">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Длинное название чтобы Лене стало стыдно</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-filter="2">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Консалтинг это...</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-filter="3">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Длинное название чтобы Лене стало стыдно</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-filter="4">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Консалтинг это...</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-filter="4">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Длинное название чтобы Лене стало стыдно</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-filter="4">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Консалтинг это...</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-filter="4">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Длинное название чтобы Лене стало стыдно</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-filter="4">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Консалтинг это...</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" data-filter="4">
+                            <a class="podcast-card" href="#">
+                                <span class="podcast-card__image">
+                                    <img src="images/content/podcasts/img_3.jpg" srcset="images/content/podcasts/img_3@2x.jpg 2x" alt="Название подкаста">
+                                </span>
+                                <span class="podcast-card__title">Длинное название чтобы Лене стало стыдно</span>
+                                <span class="podcast-card__text">Отвечаем на самые актуальные вопросы бизнеса и даем готовые решения уже сегодня...</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <p class="b-6__button-block">
+                <a class="button button--type_2" href="#">
+                    Все подкасты
+                    <svg class="arrow-right" aria-hidden="true">
+                        <use xlink:href="#arrow_right"></use>
+                    </svg>
+                </a>
+            </p>
+        </section>
     </main>
 
     <footer class="footer">
