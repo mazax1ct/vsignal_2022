@@ -90,6 +90,14 @@
         <symbol id="slider_next" viewBox="0 0 20 20">
             <path d="M5.3,0C5.5,0,5.8,0.1,6,0.3l9.7,9.7L6,19.7c-0.4,0.4-1,0.4-1.4,0s-0.4-1,0-1.4l8.3-8.3L4.6,1.7c-0.4-0.4-0.4-1,0-1.4C4.8,0.1,5,0,5.3,0z" />
         </symbol>
+        <symbol id="slider_next_new" viewBox="0 0 31 31">
+            <path
+              d="M20.3,25.5c-0.1,0-0.3,0-0.4-0.1c-0.2-0.2-0.2-0.5,0-0.7l8.8-8.6H1c-0.3,0-0.5-0.2-0.5-0.5S0.7,15,1,15h27.8L20,6.4c-0.2-0.2-0.2-0.5,0-0.7c0.2-0.2,0.5-0.2,0.7,0l9.7,9.5c0,0,0,0,0,0l0,0c0,0,0,0,0,0l0,0v0c0,0,0.1,0.1,0.1,0.2c0,0,0,0,0,0c0,0,0,0,0,0c0,0.1,0,0.1,0,0.2l0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0v0l0,0c0,0,0,0,0,0v0c0,0,0,0,0,0v0c0,0,0,0,0,0v0c0,0,0,0,0,0v0c0,0,0,0,0,0l0,0v0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0c0,0,0,0,0,0c0,0.1-0.1,0.1-0.1,0.2v0c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0l-9.7,9.5C20.6,25.5,20.5,25.5,20.3,25.5z" />
+        </symbol>
+        <symbol id="slider_prev_new" viewBox="0 0 31 31">
+            <path
+              d="M10.7,5.5c0.1,0,0.3,0,0.4,0.1c0.2,0.2,0.2,0.5,0,0.7L2.2,15H30c0.3,0,0.5,0.2,0.5,0.5S30.3,16,30,16H2.2l8.8,8.6c0.2,0.2,0.2,0.5,0,0.7c-0.2,0.2-0.5,0.2-0.7,0l-9.7-9.5c0,0,0,0,0,0l0,0c0,0,0,0,0,0l0,0v0c0,0-0.1-0.1-0.1-0.2c0,0,0,0,0,0c0,0,0,0,0,0c0-0.1,0-0.1,0-0.2l0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0v0l0,0c0,0,0,0,0,0v0c0,0,0,0,0,0v0c0,0,0,0,0,0v0c0,0,0,0,0,0v0c0,0,0,0,0,0l0,0v0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0-0.1,0-0.1,0-0.2c0,0,0,0,0,0c0,0,0,0,0,0c0-0.1,0.1-0.1,0.1-0.2v0c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0l9.7-9.5C10.4,5.5,10.5,5.5,10.7,5.5z" />
+        </symbol>
     </svg>
 
     <header class="header compensate-for-scrollbar">
@@ -318,468 +326,415 @@
         
         </section>
 
-        <section class="cases">
-            <div class="cases__title-block">
-                <h2 class="cases__title">Наши кейсы</h2>
-                <div class="cases__filter">
-                    <div class="cases__filter-list">
-                        <button class="cases__filter-button is-active" type="button" data-filter="1">E‑commerce</button>
-                        <button class="cases__filter-button" type="button" data-filter="2">E‑commerce<br> Premium</button>
-                        <button class="cases__filter-button" type="button" data-filter="3">Медицина</button>
-                        <button class="cases__filter-button" type="button" data-filter="4">Оздоровительные<br> центры</button>
-                        <button class="cases__filter-button" type="button" data-filter="5">Заводы</button>
-                        <button class="cases__filter-button" type="button" data-filter="6">Электроника</button>
-                        <button class="cases__filter-button" type="button" data-filter="7">Одежда</button>
+        <section class="cases_new">
+            <h2 class="cases_new__title">Наши кейсы</h2>
+        
+            <div class="cases-accordions">
+                <div class="case-accordion">
+                    <button class="case-accordion__toggler" type="button">
+                        <span>Санаторий и Spa</span>
+                        <span class="js-new-cases-slider-pagination slider-cnt" data-id="cases_1">1/3</span>
+                    </button>
+        
+                    <div class="case-accordion__body">
+                        <div class="case-accordion__detail">
+                            <div class="js-new-cases-slider swiper" data-id="cases_1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p class="case-accordion__detail-title">С-З Центр Доказательной Медицины</p>
+        
+                                        <div class="case-accordion__columns">
+                                            <div class="case-accordion__column">
+                                                <p><b>Северо-Западный Центр Доказательной Медицины</b> - сеть современных медицинских центров и 3 высокотехнологичные лаборатории на Северо-Западе России.</p>
+                                            </div>
+                                            <div class="case-accordion__column">
+                                                <p><b>Что сделано:</b> разработка сайта на CMS Bitrix, интеграция с МИС личного кабинета с возможностью записи пациента на приём в режиме реального времени, маркетинговая поддержка.</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="case-accordion__image">
+                                            <img src="http://vsignal.ru/upload/resize_cache/iblock/75a/1090_384_2/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png" srcset="http://vsignal.ru/upload/iblock/75a/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png 2x"
+                                              alt="С-З Центр Доказательной Медицины">
+                                        </div>
+        
+                                        <div class="case-accordion__nums">
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">18</p>
+                                                <p>Динамически обновляемых параметров</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">1240</p>
+                                                <p>Анализов доступно на сайте</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">50</p>
+                                                <p>Филиалов по Северо‑Западу</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">3</p>
+                                                <p>Типа личного кабинета</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="case-accordion__detail-title">С-З Центр Доказательной Медицины</p>
+        
+                                        <div class="case-accordion__columns">
+                                            <div class="case-accordion__column">
+                                                <p><b>Северо-Западный Центр Доказательной Медицины</b> - сеть современных медицинских центров и 3 высокотехнологичные лаборатории на Северо-Западе России.</p>
+                                            </div>
+                                            <div class="case-accordion__column">
+                                                <p><b>Что сделано:</b> разработка сайта на CMS Bitrix, интеграция с МИС личного кабинета с возможностью записи пациента на приём в режиме реального времени, маркетинговая поддержка.</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="case-accordion__image">
+                                            <img src="http://vsignal.ru/upload/resize_cache/iblock/75a/1090_384_2/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png" srcset="http://vsignal.ru/upload/iblock/75a/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png 2x"
+                                              alt="С-З Центр Доказательной Медицины">
+                                        </div>
+        
+                                        <div class="case-accordion__nums">
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">18</p>
+                                                <p>Динамически обновляемых параметров</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">1240</p>
+                                                <p>Анализов доступно на сайте</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">50</p>
+                                                <p>Филиалов по Северо‑Западу</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">3</p>
+                                                <p>Типа личного кабинета</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="case-accordion__detail-title">С-З Центр Доказательной Медицины</p>
+        
+                                        <div class="case-accordion__columns">
+                                            <div class="case-accordion__column">
+                                                <p><b>Северо-Западный Центр Доказательной Медицины</b> - сеть современных медицинских центров и 3 высокотехнологичные лаборатории на Северо-Западе России.</p>
+                                            </div>
+                                            <div class="case-accordion__column">
+                                                <p><b>Что сделано:</b> разработка сайта на CMS Bitrix, интеграция с МИС личного кабинета с возможностью записи пациента на приём в режиме реального времени, маркетинговая поддержка.</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="case-accordion__image">
+                                            <img src="http://vsignal.ru/upload/resize_cache/iblock/75a/1090_384_2/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png" srcset="http://vsignal.ru/upload/iblock/75a/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png 2x"
+                                              alt="С-З Центр Доказательной Медицины">
+                                        </div>
+        
+                                        <div class="case-accordion__nums">
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">18</p>
+                                                <p>Динамически обновляемых параметров</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">1240</p>
+                                                <p>Анализов доступно на сайте</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">50</p>
+                                                <p>Филиалов по Северо‑Западу</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">3</p>
+                                                <p>Типа личного кабинета</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="case-accordion__arrows">
+                                    <button class="js-new-cases-slider-prev swiper-button-prev" type="button" title="Назад" data-id="cases_1">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#slider_prev_new"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="js-new-cases-slider-next swiper-button-next" type="button" title="Вперёд" data-id="cases_1">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#slider_next_new"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
         
-            <div class="js-cases cases__slider swiper horizontal-cursor">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" data-filter="1">
-                        <div class="case is-open">
-                            <div class="case__title-block">
-                                <p class="case__title">Siberia resort &&nbsp;spa</p>
-                                <div class="case__pt-p">
-                                    <div class="case__podcast-time">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#time_line"></use>
-                                        </svg>
-                                        <span>1:25</span>
-                                    </div>
-                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
-                                </div>
-                            </div>
-                            <div class="case__detail">
-                                <div class="case__detail-inner">
-                                    <div class="case__detail-title-block">
-                                        <div class="case__player">
-                                            <div class="player">
-                                                <img src="images/content/player.svg" alt="">
+                <div class="case-accordion">
+                    <button class="case-accordion__toggler" type="button">
+                        <span>Медицинские центры</span>
+                        <span class="js-new-cases-slider-pagination slider-cnt" data-id="cases_2">1/3</span>
+                    </button>
+        
+                    <div class="case-accordion__body">
+                        <div class="case-accordion__detail">
+                            <div class="js-new-cases-slider swiper" data-id="cases_2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p class="case-accordion__detail-title">С-З Центр Доказательной Медицины</p>
+        
+                                        <div class="case-accordion__columns">
+                                            <div class="case-accordion__column">
+                                                <p><b>Северо-Западный Центр Доказательной Медицины</b> - сеть современных медицинских центров и 3 высокотехнологичные лаборатории на Северо-Западе России.</p>
+                                            </div>
+                                            <div class="case-accordion__column">
+                                                <p><b>Что сделано:</b> разработка сайта на CMS Bitrix, интеграция с МИС личного кабинета с возможностью записи пациента на приём в режиме реального времени, маркетинговая поддержка.</p>
                                             </div>
                                         </div>
-                                        <h3 class="case__detail-title"><a href="#">Siberia resort&nbsp;&&nbsp;spa</a></h3>
-                                    </div>
-                                    <div class="case__text">
-                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
-                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
-                                    </div>
-                                    <div class="case__nums">
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+        
+                                        <div class="case-accordion__image">
+                                            <img src="http://vsignal.ru/upload/resize_cache/iblock/75a/1090_384_2/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png" srcset="http://vsignal.ru/upload/iblock/75a/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png 2x"
+                                              alt="С-З Центр Доказательной Медицины">
                                         </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+        
+                                        <div class="case-accordion__nums">
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">18</p>
+                                                <p>Динамически обновляемых параметров</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">1240</p>
+                                                <p>Анализов доступно на сайте</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">50</p>
+                                                <p>Филиалов по Северо‑Западу</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">3</p>
+                                                <p>Типа личного кабинета</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="case__image">
-                                        <picture>
-                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
-                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
-                                        </picture>
+                                    <div class="swiper-slide">
+                                        <p class="case-accordion__detail-title">С-З Центр Доказательной Медицины</p>
+        
+                                        <div class="case-accordion__columns">
+                                            <div class="case-accordion__column">
+                                                <p><b>Северо-Западный Центр Доказательной Медицины</b> - сеть современных медицинских центров и 3 высокотехнологичные лаборатории на Северо-Западе России.</p>
+                                            </div>
+                                            <div class="case-accordion__column">
+                                                <p><b>Что сделано:</b> разработка сайта на CMS Bitrix, интеграция с МИС личного кабинета с возможностью записи пациента на приём в режиме реального времени, маркетинговая поддержка.</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="case-accordion__image">
+                                            <img src="http://vsignal.ru/upload/resize_cache/iblock/75a/1090_384_2/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png" srcset="http://vsignal.ru/upload/iblock/75a/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png 2x"
+                                              alt="С-З Центр Доказательной Медицины">
+                                        </div>
+        
+                                        <div class="case-accordion__nums">
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">18</p>
+                                                <p>Динамически обновляемых параметров</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">1240</p>
+                                                <p>Анализов доступно на сайте</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">50</p>
+                                                <p>Филиалов по Северо‑Западу</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">3</p>
+                                                <p>Типа личного кабинета</p>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="swiper-slide">
+                                        <p class="case-accordion__detail-title">С-З Центр Доказательной Медицины</p>
+        
+                                        <div class="case-accordion__columns">
+                                            <div class="case-accordion__column">
+                                                <p><b>Северо-Западный Центр Доказательной Медицины</b> - сеть современных медицинских центров и 3 высокотехнологичные лаборатории на Северо-Западе России.</p>
+                                            </div>
+                                            <div class="case-accordion__column">
+                                                <p><b>Что сделано:</b> разработка сайта на CMS Bitrix, интеграция с МИС личного кабинета с возможностью записи пациента на приём в режиме реального времени, маркетинговая поддержка.</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="case-accordion__image">
+                                            <img src="http://vsignal.ru/upload/resize_cache/iblock/75a/1090_384_2/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png" srcset="http://vsignal.ru/upload/iblock/75a/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png 2x"
+                                              alt="С-З Центр Доказательной Медицины">
+                                        </div>
+        
+                                        <div class="case-accordion__nums">
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">18</p>
+                                                <p>Динамически обновляемых параметров</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">1240</p>
+                                                <p>Анализов доступно на сайте</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">50</p>
+                                                <p>Филиалов по Северо‑Западу</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">3</p>
+                                                <p>Типа личного кабинета</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="case-accordion__arrows">
+                                    <button class="js-new-cases-slider-prev swiper-button-prev" type="button" title="Назад" data-id="cases_2">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#slider_prev_new"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="js-new-cases-slider-next swiper-button-next" type="button" title="Вперёд" data-id="cases_2">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#slider_next_new"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide" data-filter="1">
-                        <div class="case">
-                            <div class="case__title-block">
-                                <p class="case__title">Nikolaev.group</p>
-                                <div class="case__pt-p">
-                                    <div class="case__podcast-time">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#time_line"></use>
-                                        </svg>
-                                        <span>1:25</span>
-                                    </div>
-                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
-                                </div>
-                            </div>
-                            <div class="case__detail">
-                                <div class="case__detail-inner">
-                                    <div class="case__detail-title-block">
-                                        <div class="case__player">
-                                            <div class="player">
-                                                <img src="images/content/player.svg" alt="">
+                </div>
+        
+                <div class="case-accordion">
+                    <button class="case-accordion__toggler" type="button">
+                        <span>Интернет-магазины</span>
+                        <span class="js-new-cases-slider-pagination slider-cnt" data-id="cases_3">1/3</span>
+                    </button>
+        
+                    <div class="case-accordion__body">
+                        <div class="case-accordion__detail">
+                            <div class="js-new-cases-slider swiper" data-id="cases_3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p class="case-accordion__detail-title">С-З Центр Доказательной Медицины</p>
+        
+                                        <div class="case-accordion__columns">
+                                            <div class="case-accordion__column">
+                                                <p><b>Северо-Западный Центр Доказательной Медицины</b> - сеть современных медицинских центров и 3 высокотехнологичные лаборатории на Северо-Западе России.</p>
+                                            </div>
+                                            <div class="case-accordion__column">
+                                                <p><b>Что сделано:</b> разработка сайта на CMS Bitrix, интеграция с МИС личного кабинета с возможностью записи пациента на приём в режиме реального времени, маркетинговая поддержка.</p>
                                             </div>
                                         </div>
-                                        <h3 class="case__detail-title"><a href="#">Nikolaev.group</a></h3>
-                                    </div>
-                                    <div class="case__text">
-                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
-                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
-                                    </div>
-                                    <div class="case__nums">
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+        
+                                        <div class="case-accordion__image">
+                                            <img src="http://vsignal.ru/upload/resize_cache/iblock/75a/1090_384_2/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png" srcset="http://vsignal.ru/upload/iblock/75a/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png 2x"
+                                              alt="С-З Центр Доказательной Медицины">
                                         </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                    </div>
-                                    <div class="case__image">
-                                        <picture>
-                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
-                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-filter="1">
-                        <div class="case">
-                            <div class="case__title-block">
-                                <p class="case__title">GoldUnionHouse</p>
-                                <div class="case__pt-p">
-                                    <div class="case__podcast-time">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#time_line"></use>
-                                        </svg>
-                                        <span>1:25</span>
-                                    </div>
-                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
-                                </div>
-                            </div>
-                            <div class="case__detail">
-                                <div class="case__detail-inner">
-                                    <div class="case__detail-title-block">
-                                        <div class="case__player">
-                                            <div class="player">
-                                                <img src="images/content/player.svg" alt="">
+        
+                                        <div class="case-accordion__nums">
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">18</p>
+                                                <p>Динамически обновляемых параметров</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">1240</p>
+                                                <p>Анализов доступно на сайте</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">50</p>
+                                                <p>Филиалов по Северо‑Западу</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">3</p>
+                                                <p>Типа личного кабинета</p>
                                             </div>
                                         </div>
-                                        <h3 class="case__detail-title"><a href="#">GoldUnionHouse</a></h3>
                                     </div>
-                                    <div class="case__text">
-                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
-                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
-                                    </div>
-                                    <div class="case__nums">
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                    </div>
-                                    <div class="case__image">
-                                        <picture>
-                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
-                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-filter="2">
-                        <div class="case">
-                            <div class="case__title-block">
-                                <p class="case__title">Digital Razor</p>
-                                <div class="case__pt-p">
-                                    <div class="case__podcast-time">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#time_line"></use>
-                                        </svg>
-                                        <span>1:25</span>
-                                    </div>
-                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
-                                </div>
-                            </div>
-                            <div class="case__detail">
-                                <div class="case__detail-inner">
-                                    <div class="case__detail-title-block">
-                                        <div class="case__player">
-                                            <div class="player">
-                                                <img src="images/content/player.svg" alt="">
+                                    <div class="swiper-slide">
+                                        <p class="case-accordion__detail-title">С-З Центр Доказательной Медицины</p>
+        
+                                        <div class="case-accordion__columns">
+                                            <div class="case-accordion__column">
+                                                <p><b>Северо-Западный Центр Доказательной Медицины</b> - сеть современных медицинских центров и 3 высокотехнологичные лаборатории на Северо-Западе России.</p>
+                                            </div>
+                                            <div class="case-accordion__column">
+                                                <p><b>Что сделано:</b> разработка сайта на CMS Bitrix, интеграция с МИС личного кабинета с возможностью записи пациента на приём в режиме реального времени, маркетинговая поддержка.</p>
                                             </div>
                                         </div>
-                                        <h3 class="case__detail-title"><a href="#">Digital Razor</a></h3>
-                                    </div>
-                                    <div class="case__text">
-                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
-                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
-                                    </div>
-                                    <div class="case__nums">
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+        
+                                        <div class="case-accordion__image">
+                                            <img src="http://vsignal.ru/upload/resize_cache/iblock/75a/1090_384_2/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png" srcset="http://vsignal.ru/upload/iblock/75a/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png 2x"
+                                              alt="С-З Центр Доказательной Медицины">
                                         </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                    </div>
-                                    <div class="case__image">
-                                        <picture>
-                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
-                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-filter="3">
-                        <div class="case">
-                            <div class="case__title-block">
-                                <p class="case__title">Siberia resort &&nbsp;spa</p>
-                                <div class="case__pt-p">
-                                    <div class="case__podcast-time">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#time_line"></use>
-                                        </svg>
-                                        <span>1:25</span>
-                                    </div>
-                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
-                                </div>
-                            </div>
-                            <div class="case__detail">
-                                <div class="case__detail-inner">
-                                    <div class="case__detail-title-block">
-                                        <div class="case__player">
-                                            <div class="player">
-                                                <img src="images/content/player.svg" alt="">
+        
+                                        <div class="case-accordion__nums">
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">18</p>
+                                                <p>Динамически обновляемых параметров</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">1240</p>
+                                                <p>Анализов доступно на сайте</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">50</p>
+                                                <p>Филиалов по Северо‑Западу</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">3</p>
+                                                <p>Типа личного кабинета</p>
                                             </div>
                                         </div>
-                                        <h3 class="case__detail-title"><a href="#">Siberia resort&nbsp;&&nbsp;spa</a></h3>
                                     </div>
-                                    <div class="case__text">
-                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
-                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
-                                    </div>
-                                    <div class="case__nums">
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                    </div>
-                                    <div class="case__image">
-                                        <picture>
-                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
-                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-filter="3">
-                        <div class="case">
-                            <div class="case__title-block">
-                                <p class="case__title">Nikolaev.group</p>
-                                <div class="case__pt-p">
-                                    <div class="case__podcast-time">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#time_line"></use>
-                                        </svg>
-                                        <span>1:25</span>
-                                    </div>
-                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
-                                </div>
-                            </div>
-                            <div class="case__detail">
-                                <div class="case__detail-inner">
-                                    <div class="case__detail-title-block">
-                                        <div class="case__player">
-                                            <div class="player">
-                                                <img src="images/content/player.svg" alt="">
+                                    <div class="swiper-slide">
+                                        <p class="case-accordion__detail-title">С-З Центр Доказательной Медицины</p>
+        
+                                        <div class="case-accordion__columns">
+                                            <div class="case-accordion__column">
+                                                <p><b>Северо-Западный Центр Доказательной Медицины</b> - сеть современных медицинских центров и 3 высокотехнологичные лаборатории на Северо-Западе России.</p>
+                                            </div>
+                                            <div class="case-accordion__column">
+                                                <p><b>Что сделано:</b> разработка сайта на CMS Bitrix, интеграция с МИС личного кабинета с возможностью записи пациента на приём в режиме реального времени, маркетинговая поддержка.</p>
                                             </div>
                                         </div>
-                                        <h3 class="case__detail-title"><a href="#">Nikolaev.group</a></h3>
-                                    </div>
-                                    <div class="case__text">
-                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
-                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
-                                    </div>
-                                    <div class="case__nums">
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
+        
+                                        <div class="case-accordion__image">
+                                            <img src="http://vsignal.ru/upload/resize_cache/iblock/75a/1090_384_2/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png" srcset="http://vsignal.ru/upload/iblock/75a/mn1nzs5jnw46j6zv1blfedtti2h02k1x.png 2x"
+                                              alt="С-З Центр Доказательной Медицины">
                                         </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                    </div>
-                                    <div class="case__image">
-                                        <picture>
-                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
-                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-filter="3">
-                        <div class="case">
-                            <div class="case__title-block">
-                                <p class="case__title">GoldUnionHouse</p>
-                                <div class="case__pt-p">
-                                    <div class="case__podcast-time">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="#time_line"></use>
-                                        </svg>
-                                        <span>1:25</span>
-                                    </div>
-                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
-                                </div>
-                            </div>
-                            <div class="case__detail">
-                                <div class="case__detail-inner">
-                                    <div class="case__detail-title-block">
-                                        <div class="case__player">
-                                            <div class="player">
-                                                <img src="images/content/player.svg" alt="">
+        
+                                        <div class="case-accordion__nums">
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">18</p>
+                                                <p>Динамически обновляемых параметров</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">1240</p>
+                                                <p>Анализов доступно на сайте</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">50</p>
+                                                <p>Филиалов по Северо‑Западу</p>
+                                            </div>
+                                            <div class="case-accordion__nums-item">
+                                                <p class="case-accordion__nums-title">3</p>
+                                                <p>Типа личного кабинета</p>
                                             </div>
                                         </div>
-                                        <h3 class="case__detail-title"><a href="#">GoldUnionHouse</a></h3>
-                                    </div>
-                                    <div class="case__text">
-                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
-                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
-                                    </div>
-                                    <div class="case__nums">
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                    </div>
-                                    <div class="case__image">
-                                        <picture>
-                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
-                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
-                                        </picture>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-filter="3">
-                        <div class="case">
-                            <div class="case__title-block">
-                                <p class="case__title">Digital Razor</p>
-                                <div class="case__pt-p">
-                                    <div class="case__podcast-time">
+        
+                                <div class="case-accordion__arrows">
+                                    <button class="js-new-cases-slider-prev swiper-button-prev" type="button" title="Назад" data-id="cases_3">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="#time_line"></use>
+                                            <use xlink:href="#slider_prev_new"></use>
                                         </svg>
-                                        <span>1:25</span>
-                                    </div>
-                                    <p class="case__period">2015&nbsp;-&nbsp;наст.<br> время</p>
-                                </div>
-                            </div>
-                            <div class="case__detail">
-                                <div class="case__detail-inner">
-                                    <div class="case__detail-title-block">
-                                        <div class="case__player">
-                                            <div class="player">
-                                                <img src="images/content/player.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <h3 class="case__detail-title"><a href="#">Digital Razor</a></h3>
-                                    </div>
-                                    <div class="case__text">
-                                        <p><b>Что сделано:</b> настройка сквозной аналитики, оптимизация расходов на рекламу, комплексная маркетинговая поддержка</p>
-                                        <p><b>Digital Razor</b> - бренд компании Forsite, который направлен исключительно на создание высокопроизводительных игровых станций.</p>
-                                    </div>
-                                    <div class="case__nums">
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                        <div class="case__nums-item">
-                                            <p class="case__nums-title">285</p>
-                                            <p>проблем мы&nbsp;выявили при&nbsp;анализе</p>
-                                        </div>
-                                    </div>
-                                    <div class="case__image">
-                                        <picture>
-                                            <source srcset="images/content/cases/img_1_fhd.jpg, images/content/cases/img_1_fhd@2x.jpg 2x" media="(min-width: 768px)">
-                                            <img src="images/content/cases/img_1.jpg" srcset="images/content/cases/img_1@2x.jpg 2x" alt="" />
-                                        </picture>
-                                    </div>
+                                    </button>
+                                    <button class="js-new-cases-slider-next swiper-button-next" type="button" title="Вперёд" data-id="cases_3">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="#slider_next_new"></use>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1251,7 +1206,8 @@
 
 <script src="js/video.js"></script>
 <script src="js/solutions-list.js"></script>
-<script src="js/cases.js"></script>
+<!--<script src="js/cases.js"></script>-->
+<script src="js/cases_new.js"></script>
 <script src="js/services-slider.js"></script>
 <script src="js/podcasts.js"></script>
 

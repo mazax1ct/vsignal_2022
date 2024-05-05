@@ -2,9 +2,9 @@ const servicesSlider = new Swiper(
   '.js-services-slider', {
     /*slidesPerView: 'auto',
     spaceBetween: 0,
-    freeMode: true,*/
+    freeMode: true,
+    slidesOffsetBefore: '12',*/
 
-    //slidesOffsetBefore: '12',
     noSwiping: true,
     noSwipingClass: 'swiper-no-swiping',
     slidesPerView: 'auto',
