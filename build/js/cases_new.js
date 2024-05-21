@@ -20,6 +20,9 @@ $(document).on('click', '.case-accordion__toggler', function() {
 $(document).ready(function () {
   if($('.js-new-cases-slider').length){
     $('.js-new-cases-slider').each(function(index) {
+      var slidesCount = $(this).find('.swiper-slide').length;
+      $('.js-new-cases-slider-pagination[data-id="'+$(this).attr('data-id')+'"]').text('1 / '+ slidesCount);
+
       var slider = new Swiper($(this)[0], {
         loop: true,
         slidesPerView: 1,
@@ -27,11 +30,12 @@ $(document).ready(function () {
         navigation: {
           nextEl: '.js-new-cases-slider-next[data-id="'+$(this).attr('data-id')+'"]',
           prevEl: '.js-new-cases-slider-prev[data-id="'+$(this).attr('data-id')+'"]',
-        },
-        pagination: {
-          el: '.js-new-cases-slider-pagination[data-id="'+$(this).attr('data-id')+'"]',
-          type: "fraction",
         }
+      });
+
+      slider.on('slideChange', function () {
+        var block = slider.el.dataset.id;
+        $('.js-new-cases-slider-pagination[data-id="'+block+'"]').text(slider.realIndex + 1 + ' / ' + slidesCount);
       });
     });
   }
